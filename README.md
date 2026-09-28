@@ -23,8 +23,8 @@ Travel is widely spread: on average, a station's top 5 destinations carry only a
 
 | Step | Notebook | What it does |
 |---|---|---|
-| 1 | `01_prepare_v1_data.ipynb` | Downloads ridership and station data, cleans and joins them, and saves small ready-to-map files in `data/processed` |
-| 2 | `02_build_v1_map.ipynb` | Reads those files and draws the interactive map, saved as `docs/index.html` |
+| 1 | `01datapreparation.ipynb` | Downloads ridership and station data, cleans and joins them, and saves small ready-to-map files in `data/processed` |
+| 2 | `02buildmap.ipynb` | Reads those files and draws the interactive map, saved as `docs/index.html` |
 
 Main methods:
 
