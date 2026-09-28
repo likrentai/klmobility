@@ -1,0 +1,771 @@
+origin_key,origin_name,dest_key,dest_name,avg_daily_trips,share_of_origin,rank
+16sierra,16 Sierra,tunrazakexchange,Tun Razak Exchange,97.0,0.208,1
+16sierra,16 Sierra,bukitbintang,Bukit Bintang,55.0,0.118,2
+16sierra,16 Sierra,muziumnegara,Muzium Negara,31.0,0.067,3
+16sierra,16 Sierra,pasarseni,Pasar Seni,20.0,0.042,4
+16sierra,16 Sierra,masjidjamek,Masjid Jamek,16.0,0.035,5
+abdullahhukum,Abdullah Hukum,klsentral,KL Sentral,1462.0,0.109,1
+abdullahhukum,Abdullah Hukum,universiti,Universiti,842.0,0.063,2
+abdullahhukum,Abdullah Hukum,bankrakyatbangsar,Bank Rakyat Bangsar,647.0,0.048,3
+abdullahhukum,Abdullah Hukum,ampangpark,Ampang Park,582.0,0.043,4
+abdullahhukum,Abdullah Hukum,kerinchi,Kerinchi,548.0,0.041,5
+alammegah,Alam Megah,klsentral,KL Sentral,142.0,0.1,1
+alammegah,Alam Megah,klcc,KLCC,100.0,0.07,2
+alammegah,Alam Megah,pasarseni,Pasar Seni,76.0,0.054,3
+alammegah,Alam Megah,cgcglenmarie,Cgc Glenmarie,73.0,0.051,4
+alammegah,Alam Megah,abdullahhukum,Abdullah Hukum,69.0,0.048,5
+alamsutera,Alam Sutera,kinrara,Kinrara,95.0,0.065,1
+alamsutera,Alam Sutera,masjidjamek,Masjid Jamek,77.0,0.053,2
+alamsutera,Alam Sutera,ioipuchongjaya,IOI Puchong Jaya,74.0,0.05,3
+alamsutera,Alam Sutera,bandartasikselatan,Bandar Tasik Selatan,61.0,0.042,4
+alamsutera,Alam Sutera,pusatbandarpuchong,Pusat Bandar Puchong,61.0,0.042,5
+ampang,Ampang,maluri,Maluri,295.0,0.08,1
+ampang,Ampang,bukitbintang,Bukit Bintang,256.0,0.069,2
+ampang,Ampang,masjidjamek,Masjid Jamek,204.0,0.055,3
+ampang,Ampang,hangtuah,Hang Tuah,142.0,0.038,4
+ampang,Ampang,cahaya,Cahaya,134.0,0.036,5
+ampangpark,Ampang Park,klcc,KLCC,2089.0,0.111,1
+ampangpark,Ampang Park,wangsamaju,Wangsa Maju,2070.0,0.11,2
+ampangpark,Ampang Park,tunrazakexchange,Tun Razak Exchange,1231.0,0.066,3
+ampangpark,Ampang Park,tamanmelati,Taman Melati,918.0,0.049,4
+ampangpark,Ampang Park,srirampai,Sri Rampai,799.0,0.043,5
+aradamansara,Ara Damansara,klsentral,KL Sentral,448.0,0.097,1
+aradamansara,Ara Damansara,abdullahhukum,Abdullah Hukum,391.0,0.085,2
+aradamansara,Ara Damansara,cgcglenmarie,Cgc Glenmarie,388.0,0.084,3
+aradamansara,Ara Damansara,subangjaya,Subang Jaya,278.0,0.06,4
+aradamansara,Ara Damansara,ss15,SS 15,208.0,0.045,5
+asiajaya,Asia Jaya,klsentral,KL Sentral,530.0,0.106,1
+asiajaya,Asia Jaya,abdullahhukum,Abdullah Hukum,276.0,0.055,2
+asiajaya,Asia Jaya,universiti,Universiti,274.0,0.055,3
+asiajaya,Asia Jaya,cgcglenmarie,Cgc Glenmarie,244.0,0.049,4
+asiajaya,Asia Jaya,ampangpark,Ampang Park,191.0,0.038,5
+awanbesar,Awan Besar,bukitjalil,Bukit Jalil,194.0,0.077,1
+awanbesar,Awan Besar,masjidjamek,Masjid Jamek,139.0,0.055,2
+awanbesar,Awan Besar,bandartasikselatan,Bandar Tasik Selatan,120.0,0.048,3
+awanbesar,Awan Besar,tunrazakexchange,Tun Razak Exchange,96.0,0.038,4
+awanbesar,Awan Besar,hangtuah,Hang Tuah,89.0,0.036,5
+bandaraya,Bandaraya,pwtc,PWTC,442.0,0.078,1
+bandaraya,Bandaraya,sentultimur,Sentul Timur,398.0,0.07,2
+bandaraya,Bandaraya,masjidjamek,Masjid Jamek,307.0,0.054,3
+bandaraya,Bandaraya,sentul,Sentul,232.0,0.041,4
+bandaraya,Bandaraya,hangtuah,Hang Tuah,208.0,0.037,5
+bandarbaruklang,Bandar Baru Klang,glenmarie2,Glenmarie 2,69.0,0.317,1
+bandarbaruklang,Bandar Baru Klang,bandarutama,Bandar Utama,55.0,0.254,2
+bandarbaruklang,Bandar Baru Klang,bandarbukittinggi,Bandar Bukit Tinggi,18.0,0.082,3
+bandarbaruklang,Bandar Baru Klang,jambatankota,Jambatan Kota,12.0,0.054,4
+bandarbaruklang,Bandar Baru Klang,seksyen7,Seksyen 7,11.0,0.049,5
+bandarbukittinggi,Bandar Bukit Tinggi,glenmarie2,Glenmarie 2,122.0,0.266,1
+bandarbukittinggi,Bandar Bukit Tinggi,bandarutama,Bandar Utama,111.0,0.241,2
+bandarbukittinggi,Bandar Bukit Tinggi,jambatankota,Jambatan Kota,34.0,0.073,3
+bandarbukittinggi,Bandar Bukit Tinggi,johansetia,Johan Setia,32.0,0.07,4
+bandarbukittinggi,Bandar Bukit Tinggi,pasarklang,Pasar Klang,28.0,0.06,5
+bandarputeri,Bandar Puteri,pusatbandarpuchong,Pusat Bandar Puchong,185.0,0.12,1
+bandarputeri,Bandar Puteri,ioipuchongjaya,IOI Puchong Jaya,117.0,0.076,2
+bandarputeri,Bandar Puteri,puchongprima,Puchong Prima,99.0,0.064,3
+bandarputeri,Bandar Puteri,puchongperdana,Puchong Perdana,63.0,0.041,4
+bandarputeri,Bandar Puteri,kinrara,Kinrara,58.0,0.037,5
+bandartasikselatan,Bandar Tasik Selatan,masjidjamek,Masjid Jamek,410.0,0.079,1
+bandartasikselatan,Bandar Tasik Selatan,hangtuah,Hang Tuah,217.0,0.042,2
+bandartasikselatan,Bandar Tasik Selatan,bukitjalil,Bukit Jalil,172.0,0.033,3
+bandartasikselatan,Bandar Tasik Selatan,salakselatan,Salak Selatan,171.0,0.033,4
+bandartasikselatan,Bandar Tasik Selatan,bandaraya,Bandaraya,158.0,0.03,5
+bandartunhussienonn,Bandar Tun Hussien Onn,bukitbintang,Bukit Bintang,541.0,0.162,1
+bandartunhussienonn,Bandar Tun Hussien Onn,tunrazakexchange,Tun Razak Exchange,254.0,0.076,2
+bandartunhussienonn,Bandar Tun Hussien Onn,muziumnegara,Muzium Negara,210.0,0.063,3
+bandartunhussienonn,Bandar Tun Hussien Onn,maluri,Maluri,196.0,0.059,4
+bandartunhussienonn,Bandar Tun Hussien Onn,cochrane,Cochrane,154.0,0.046,5
+bandartunrazak,Bandar Tun Razak,bandaraya,Bandaraya,126.0,0.083,1
+bandartunrazak,Bandar Tun Razak,masjidjamek,Masjid Jamek,119.0,0.079,2
+bandartunrazak,Bandar Tun Razak,bandartasikselatan,Bandar Tasik Selatan,108.0,0.072,3
+bandartunrazak,Bandar Tun Razak,pudu,Pudu,65.0,0.043,4
+bandartunrazak,Bandar Tun Razak,salakselatan,Salak Selatan,64.0,0.042,5
+bandarutama,Bandar Utama,mutiaradamansara,Mutiara Damansara,1042.0,0.08,1
+bandarutama,Bandar Utama,surian,Surian,990.0,0.076,2
+bandarutama,Bandar Utama,bukitbintang,Bukit Bintang,839.0,0.065,3
+bandarutama,Bandar Utama,kotadamansara,Kota Damansara,643.0,0.05,4
+bandarutama,Bandar Utama,muziumnegara,Muzium Negara,561.0,0.043,5
+bandarutama11,Bandar Utama 11,bandarutama,Bandar Utama,69.0,0.564,1
+bandarutama11,Bandar Utama 11,kayuara,Kayu Ara,28.0,0.231,2
+bandarutama11,Bandar Utama 11,glenmarie2,Glenmarie 2,10.0,0.08,3
+bandarutama11,Bandar Utama 11,damansaraidaman,Damansara Idaman,3.0,0.024,4
+bandarutama11,Bandar Utama 11,stadiumshahalam,Stadium Shah Alam,2.0,0.015,5
+bankrakyatbangsar,Bank Rakyat Bangsar,klsentral,KL Sentral,1542.0,0.192,1
+bankrakyatbangsar,Bank Rakyat Bangsar,abdullahhukum,Abdullah Hukum,733.0,0.091,2
+bankrakyatbangsar,Bank Rakyat Bangsar,pasarseni,Pasar Seni,443.0,0.055,3
+bankrakyatbangsar,Bank Rakyat Bangsar,klcc,KLCC,374.0,0.047,4
+bankrakyatbangsar,Bank Rakyat Bangsar,universiti,Universiti,354.0,0.044,5
+batu11cheras,Batu 11 Cheras,bukitbintang,Bukit Bintang,371.0,0.139,1
+batu11cheras,Batu 11 Cheras,tunrazakexchange,Tun Razak Exchange,165.0,0.062,2
+batu11cheras,Batu 11 Cheras,maluri,Maluri,164.0,0.062,3
+batu11cheras,Batu 11 Cheras,pasarseni,Pasar Seni,145.0,0.055,4
+batu11cheras,Batu 11 Cheras,muziumnegara,Muzium Negara,138.0,0.052,5
+bukitbintang,Bukit Bintang,maluri,Maluri,2230.0,0.066,1
+bukitbintang,Bukit Bintang,pasarseni,Pasar Seni,2086.0,0.062,2
+bukitbintang,Bukit Bintang,tunrazakexchange,Tun Razak Exchange,1878.0,0.056,3
+bukitbintang,Bukit Bintang,bukitnanas,Bukit Nanas,1439.0,0.043,4
+bukitbintang,Bukit Bintang,cochrane,Cochrane,1389.0,0.041,5
+bukitdukung,Bukit Dukung,bukitbintang,Bukit Bintang,339.0,0.141,1
+bukitdukung,Bukit Dukung,tunrazakexchange,Tun Razak Exchange,149.0,0.062,2
+bukitdukung,Bukit Dukung,muziumnegara,Muzium Negara,138.0,0.057,3
+bukitdukung,Bukit Dukung,maluri,Maluri,132.0,0.055,4
+bukitdukung,Bukit Dukung,cochrane,Cochrane,113.0,0.047,5
+bukitjalil,Bukit Jalil,awanbesar,Awan Besar,230.0,0.078,1
+bukitjalil,Bukit Jalil,bandartasikselatan,Bandar Tasik Selatan,166.0,0.056,2
+bukitjalil,Bukit Jalil,muhibbah,Muhibbah,150.0,0.051,3
+bukitjalil,Bukit Jalil,masjidjamek,Masjid Jamek,129.0,0.044,4
+bukitjalil,Bukit Jalil,hangtuah,Hang Tuah,113.0,0.038,5
+bukitnanas,Bukit Nanas,bukitbintang,Bukit Bintang,1529.0,0.405,1
+bukitnanas,Bukit Nanas,chowkit,Chow Kit,370.0,0.098,2
+bukitnanas,Bukit Nanas,imbi,Imbi,344.0,0.091,3
+bukitnanas,Bukit Nanas,rajachulan,Raja Chulan,306.0,0.081,4
+bukitnanas,Bukit Nanas,medantuanku,Medan Tuanku,274.0,0.073,5
+cahaya,Cahaya,maluri,Maluri,209.0,0.089,1
+cahaya,Cahaya,bukitbintang,Bukit Bintang,188.0,0.08,2
+cahaya,Cahaya,ampang,Ampang,137.0,0.058,3
+cahaya,Cahaya,masjidjamek,Masjid Jamek,131.0,0.056,4
+cahaya,Cahaya,pudu,Pudu,125.0,0.053,5
+cempaka,Cempaka,maluri,Maluri,320.0,0.096,1
+cempaka,Cempaka,bukitbintang,Bukit Bintang,273.0,0.082,2
+cempaka,Cempaka,masjidjamek,Masjid Jamek,209.0,0.063,3
+cempaka,Cempaka,hangtuah,Hang Tuah,154.0,0.046,4
+cempaka,Cempaka,bandaraya,Bandaraya,133.0,0.04,5
+cgcglenmarie,Cgc Glenmarie,klsentral,KL Sentral,899.0,0.113,1
+cgcglenmarie,Cgc Glenmarie,klcc,KLCC,511.0,0.064,2
+cgcglenmarie,Cgc Glenmarie,subangjaya,Subang Jaya,416.0,0.052,3
+cgcglenmarie,Cgc Glenmarie,pasarseni,Pasar Seni,406.0,0.051,4
+cgcglenmarie,Cgc Glenmarie,abdullahhukum,Abdullah Hukum,397.0,0.05,5
+chansowlin,Chan Sow Lin,tunrazakexchange,Tun Razak Exchange,256.0,0.091,1
+chansowlin,Chan Sow Lin,maluri,Maluri,190.0,0.067,2
+chansowlin,Chan Sow Lin,masjidjamek,Masjid Jamek,173.0,0.061,3
+chansowlin,Chan Sow Lin,bukitbintang,Bukit Bintang,165.0,0.058,4
+chansowlin,Chan Sow Lin,hangtuah,Hang Tuah,117.0,0.041,5
+cheras,Cheras,masjidjamek,Masjid Jamek,180.0,0.088,1
+cheras,Cheras,bandaraya,Bandaraya,103.0,0.05,2
+cheras,Cheras,hangtuah,Hang Tuah,103.0,0.05,3
+cheras,Cheras,bandartasikselatan,Bandar Tasik Selatan,93.0,0.045,4
+cheras,Cheras,pudu,Pudu,87.0,0.042,5
+chowkit,Chow Kit,bukitbintang,Bukit Bintang,1126.0,0.324,1
+chowkit,Chow Kit,bukitnanas,Bukit Nanas,337.0,0.097,2
+chowkit,Chow Kit,klsentral,KL Sentral,311.0,0.089,3
+chowkit,Chow Kit,medantuanku,Medan Tuanku,303.0,0.087,4
+chowkit,Chow Kit,rajachulan,Raja Chulan,292.0,0.084,5
+cochrane,Cochrane,bukitbintang,Bukit Bintang,1250.0,0.14,1
+cochrane,Cochrane,tunrazakexchange,Tun Razak Exchange,1173.0,0.131,2
+cochrane,Cochrane,maluri,Maluri,754.0,0.084,3
+cochrane,Cochrane,pasarseni,Pasar Seni,450.0,0.05,4
+cochrane,Cochrane,kajang,Kajang,342.0,0.038,5
+conlay,Conlay,tunrazakexchange,Tun Razak Exchange,372.0,0.183,1
+conlay,Conlay,maluri,Maluri,117.0,0.058,2
+conlay,Conlay,cochrane,Cochrane,87.0,0.043,3
+conlay,Conlay,titiwangsa,Titiwangsa,82.0,0.04,4
+conlay,Conlay,bukitbintang,Bukit Bintang,80.0,0.04,5
+cyberjayacitycentre,Cyberjaya City Centre,tunrazakexchange,Tun Razak Exchange,101.0,0.137,1
+cyberjayacitycentre,Cyberjaya City Centre,bukitbintang,Bukit Bintang,78.0,0.106,2
+cyberjayacitycentre,Cyberjaya City Centre,muziumnegara,Muzium Negara,45.0,0.061,3
+cyberjayacitycentre,Cyberjaya City Centre,pasarseni,Pasar Seni,38.0,0.051,4
+cyberjayacitycentre,Cyberjaya City Centre,masjidjamek,Masjid Jamek,24.0,0.033,5
+cyberjayautara,Cyberjaya Utara,tunrazakexchange,Tun Razak Exchange,192.0,0.153,1
+cyberjayautara,Cyberjaya Utara,bukitbintang,Bukit Bintang,136.0,0.109,2
+cyberjayautara,Cyberjaya Utara,muziumnegara,Muzium Negara,69.0,0.055,3
+cyberjayautara,Cyberjaya Utara,pasarseni,Pasar Seni,56.0,0.044,4
+cyberjayautara,Cyberjaya Utara,masjidjamek,Masjid Jamek,40.0,0.032,5
+damai,Damai,klcc,KLCC,456.0,0.258,1
+damai,Damai,ampangpark,Ampang Park,268.0,0.152,2
+damai,Damai,klsentral,KL Sentral,110.0,0.062,3
+damai,Damai,masjidjamek,Masjid Jamek,83.0,0.047,4
+damai,Damai,jelatek,Jelatek,81.0,0.046,5
+damansaradamai,Damansara Damai,bandarutama,Bandar Utama,345.0,0.145,1
+damansaradamai,Damansara Damai,surian,Surian,177.0,0.074,2
+damansaradamai,Damansara Damai,sungaibuloh,Sungai Buloh,134.0,0.056,3
+damansaradamai,Damansara Damai,muziumnegara,Muzium Negara,127.0,0.053,4
+damansaradamai,Damansara Damai,mutiaradamansara,Mutiara Damansara,122.0,0.051,5
+damansaraidaman,Damansara Idaman,bandarutama,Bandar Utama,88.0,0.522,1
+damansaraidaman,Damansara Idaman,glenmarie2,Glenmarie 2,27.0,0.161,2
+damansaraidaman,Damansara Idaman,jambatankota,Jambatan Kota,7.0,0.039,3
+damansaraidaman,Damansara Idaman,subang,Subang,5.0,0.03,4
+damansaraidaman,Damansara Idaman,pasarklang,Pasar Klang,4.0,0.026,5
+dangwangi,Dang Wangi,klcc,KLCC,476.0,0.121,1
+dangwangi,Dang Wangi,klsentral,KL Sentral,274.0,0.069,2
+dangwangi,Dang Wangi,pasarseni,Pasar Seni,250.0,0.063,3
+dangwangi,Dang Wangi,wangsamaju,Wangsa Maju,228.0,0.058,4
+dangwangi,Dang Wangi,ampangpark,Ampang Park,223.0,0.057,5
+datokeramat,Dato' Keramat,klcc,KLCC,257.0,0.189,1
+datokeramat,Dato' Keramat,ampangpark,Ampang Park,219.0,0.161,2
+datokeramat,Dato' Keramat,jelatek,Jelatek,116.0,0.085,3
+datokeramat,Dato' Keramat,masjidjamek,Masjid Jamek,68.0,0.05,4
+datokeramat,Dato' Keramat,klsentral,KL Sentral,68.0,0.05,5
+datomenteri,Dato' Menteri - SA Sentral,glenmarie2,Glenmarie 2,126.0,0.386,1
+datomenteri,Dato' Menteri - SA Sentral,bandarutama,Bandar Utama,102.0,0.312,2
+datomenteri,Dato' Menteri - SA Sentral,seksyen7,Seksyen 7,21.0,0.066,3
+datomenteri,Dato' Menteri - SA Sentral,jambatankota,Jambatan Kota,12.0,0.036,4
+datomenteri,Dato' Menteri - SA Sentral,stadiumshahalam,Stadium Shah Alam,11.0,0.035,5
+glenmarie2,Glenmarie 2,bandarutama,Bandar Utama,420.0,0.193,1
+glenmarie2,Glenmarie 2,stadiumshahalam,Stadium Shah Alam,250.0,0.115,2
+glenmarie2,Glenmarie 2,seksyen7,Seksyen 7,219.0,0.101,3
+glenmarie2,Glenmarie 2,pasarklang,Pasar Klang,173.0,0.079,4
+glenmarie2,Glenmarie 2,datomenteri,Dato' Menteri - SA Sentral,147.0,0.068,5
+gombak,Gombak,klcc,KLCC,721.0,0.175,1
+gombak,Gombak,ampangpark,Ampang Park,557.0,0.135,2
+gombak,Gombak,klsentral,KL Sentral,357.0,0.087,3
+gombak,Gombak,masjidjamek,Masjid Jamek,224.0,0.055,4
+gombak,Gombak,pasarseni,Pasar Seni,200.0,0.049,5
+hangtuah,Hang Tuah,bukitbintang,Bukit Bintang,1312.0,0.142,1
+hangtuah,Hang Tuah,klsentral,KL Sentral,650.0,0.07,2
+hangtuah,Hang Tuah,masjidjamek,Masjid Jamek,486.0,0.053,3
+hangtuah,Hang Tuah,maluri,Maluri,394.0,0.043,4
+hangtuah,Hang Tuah,pudu,Pudu,368.0,0.04,5
+hospitalkualalumpur,Hospital Kuala Lumpur,tunrazakexchange,Tun Razak Exchange,352.0,0.158,1
+hospitalkualalumpur,Hospital Kuala Lumpur,bukitbintang,Bukit Bintang,129.0,0.058,2
+hospitalkualalumpur,Hospital Kuala Lumpur,cochrane,Cochrane,125.0,0.056,3
+hospitalkualalumpur,Hospital Kuala Lumpur,maluri,Maluri,123.0,0.055,4
+hospitalkualalumpur,Hospital Kuala Lumpur,sungaibuloh,Sungai Buloh,100.0,0.045,5
+imbi,Imbi,bukitbintang,Bukit Bintang,1218.0,0.25,1
+imbi,Imbi,klsentral,KL Sentral,878.0,0.18,2
+imbi,Imbi,hangtuah,Hang Tuah,342.0,0.07,3
+imbi,Imbi,bukitnanas,Bukit Nanas,320.0,0.066,4
+imbi,Imbi,chowkit,Chow Kit,286.0,0.059,5
+ioipuchongjaya,IOI Puchong Jaya,puchongprima,Puchong Prima,325.0,0.11,1
+ioipuchongjaya,IOI Puchong Jaya,pusatbandarpuchong,Pusat Bandar Puchong,311.0,0.106,2
+ioipuchongjaya,IOI Puchong Jaya,kinrara,Kinrara,233.0,0.079,3
+ioipuchongjaya,IOI Puchong Jaya,puchongperdana,Puchong Perdana,200.0,0.068,4
+ioipuchongjaya,IOI Puchong Jaya,bandarputeri,Bandar Puteri,117.0,0.04,5
+jalanipoh,Jalan Ipoh,tunrazakexchange,Tun Razak Exchange,58.0,0.09,1
+jalanipoh,Jalan Ipoh,sungaibuloh,Sungai Buloh,49.0,0.075,2
+jalanipoh,Jalan Ipoh,bukitbintang,Bukit Bintang,33.0,0.051,3
+jalanipoh,Jalan Ipoh,bandarutama,Bandar Utama,21.0,0.033,4
+jalanipoh,Jalan Ipoh,cochrane,Cochrane,20.0,0.031,5
+jalanmeru,Jalan Meru,bandarutama,Bandar Utama,22.0,0.213,1
+jalanmeru,Jalan Meru,glenmarie2,Glenmarie 2,22.0,0.213,2
+jalanmeru,Jalan Meru,bandarbukittinggi,Bandar Bukit Tinggi,15.0,0.141,3
+jalanmeru,Jalan Meru,jambatankota,Jambatan Kota,9.0,0.082,4
+jalanmeru,Jalan Meru,pasarklang,Pasar Klang,7.0,0.07,5
+jambatankota,Jambatan Kota,glenmarie2,Glenmarie 2,122.0,0.286,1
+jambatankota,Jambatan Kota,bandarutama,Bandar Utama,101.0,0.236,2
+jambatankota,Jambatan Kota,bandarbukittinggi,Bandar Bukit Tinggi,42.0,0.098,3
+jambatankota,Jambatan Kota,seksyen7,Seksyen 7,20.0,0.046,4
+jambatankota,Jambatan Kota,johansetia,Johan Setia,17.0,0.04,5
+jelatek,Jelatek,klcc,KLCC,714.0,0.198,1
+jelatek,Jelatek,ampangpark,Ampang Park,635.0,0.177,2
+jelatek,Jelatek,klsentral,KL Sentral,214.0,0.059,3
+jelatek,Jelatek,setiawangsa,Setiawangsa,187.0,0.052,4
+jelatek,Jelatek,wangsamaju,Wangsa Maju,172.0,0.048,5
+jinjang,Jinjang,tunrazakexchange,Tun Razak Exchange,165.0,0.12,1
+jinjang,Jinjang,bukitbintang,Bukit Bintang,103.0,0.075,2
+jinjang,Jinjang,bandarutama,Bandar Utama,83.0,0.06,3
+jinjang,Jinjang,masjidjamek,Masjid Jamek,61.0,0.045,4
+jinjang,Jinjang,rajachulan,Raja Chulan,57.0,0.042,5
+johansetia,Johan Setia,glenmarie2,Glenmarie 2,87.0,0.277,1
+johansetia,Johan Setia,bandarutama,Bandar Utama,87.0,0.275,2
+johansetia,Johan Setia,bandarbukittinggi,Bandar Bukit Tinggi,29.0,0.091,3
+johansetia,Johan Setia,jambatankota,Jambatan Kota,17.0,0.054,4
+johansetia,Johan Setia,seksyen7,Seksyen 7,16.0,0.05,5
+kajang,Kajang,bukitbintang,Bukit Bintang,999.0,0.144,1
+kajang,Kajang,muziumnegara,Muzium Negara,533.0,0.077,2
+kajang,Kajang,tunrazakexchange,Tun Razak Exchange,503.0,0.073,3
+kajang,Kajang,pasarseni,Pasar Seni,426.0,0.061,4
+kajang,Kajang,maluri,Maluri,318.0,0.046,5
+kampungbaru,Kampung Baru,klcc,KLCC,605.0,0.204,1
+kampungbaru,Kampung Baru,masjidjamek,Masjid Jamek,284.0,0.096,2
+kampungbaru,Kampung Baru,ampangpark,Ampang Park,249.0,0.084,3
+kampungbaru,Kampung Baru,klsentral,KL Sentral,244.0,0.083,4
+kampungbaru,Kampung Baru,pasarseni,Pasar Seni,201.0,0.068,5
+kampungbatu,Kampung Batu,tunrazakexchange,Tun Razak Exchange,233.0,0.146,1
+kampungbatu,Kampung Batu,bukitbintang,Bukit Bintang,98.0,0.061,2
+kampungbatu,Kampung Batu,bandarutama,Bandar Utama,67.0,0.042,3
+kampungbatu,Kampung Batu,rajachulan,Raja Chulan,65.0,0.041,4
+kampungbatu,Kampung Batu,masjidjamek,Masjid Jamek,64.0,0.04,5
+kampungselamat,Kampung Selamat,bandarutama,Bandar Utama,195.0,0.138,1
+kampungselamat,Kampung Selamat,surian,Surian,186.0,0.132,2
+kampungselamat,Kampung Selamat,kotadamansara,Kota Damansara,180.0,0.128,3
+kampungselamat,Kampung Selamat,sungaibuloh,Sungai Buloh,87.0,0.062,4
+kampungselamat,Kampung Selamat,ttdi,TTDI,73.0,0.052,5
+kayuara,Kayu Ara,bandarutama,Bandar Utama,136.0,0.581,1
+kayuara,Kayu Ara,bandarutama11,Bandar Utama 11,29.0,0.123,2
+kayuara,Kayu Ara,glenmarie2,Glenmarie 2,24.0,0.103,3
+kayuara,Kayu Ara,jambatankota,Jambatan Kota,7.0,0.029,4
+kayuara,Kayu Ara,subang,Subang,6.0,0.026,5
+kelanajaya,Kelana Jaya,klsentral,KL Sentral,240.0,0.1,1
+kelanajaya,Kelana Jaya,klcc,KLCC,178.0,0.074,2
+kelanajaya,Kelana Jaya,abdullahhukum,Abdullah Hukum,177.0,0.073,3
+kelanajaya,Kelana Jaya,pasarseni,Pasar Seni,99.0,0.041,4
+kelanajaya,Kelana Jaya,lembahsubang,Lembah Subang,95.0,0.039,5
+kentomen,Kentomen,tunrazakexchange,Tun Razak Exchange,151.0,0.136,1
+kentomen,Kentomen,bukitbintang,Bukit Bintang,79.0,0.071,2
+kentomen,Kentomen,masjidjamek,Masjid Jamek,76.0,0.068,3
+kentomen,Kentomen,rajachulan,Raja Chulan,42.0,0.038,4
+kentomen,Kentomen,titiwangsa,Titiwangsa,40.0,0.036,5
+kepongbaru,Kepong Baru,tunrazakexchange,Tun Razak Exchange,208.0,0.132,1
+kepongbaru,Kepong Baru,bukitbintang,Bukit Bintang,120.0,0.076,2
+kepongbaru,Kepong Baru,bandarutama,Bandar Utama,112.0,0.071,3
+kepongbaru,Kepong Baru,sungaibuloh,Sungai Buloh,56.0,0.035,4
+kepongbaru,Kepong Baru,rajachulan,Raja Chulan,53.0,0.033,5
+kerinchi,Kerinchi,klsentral,KL Sentral,900.0,0.14,1
+kerinchi,Kerinchi,abdullahhukum,Abdullah Hukum,540.0,0.084,2
+kerinchi,Kerinchi,ampangpark,Ampang Park,268.0,0.042,3
+kerinchi,Kerinchi,pasarseni,Pasar Seni,214.0,0.033,4
+kerinchi,Kerinchi,cgcglenmarie,Cgc Glenmarie,209.0,0.032,5
+kerjaya,Kerjaya,glenmarie2,Glenmarie 2,119.0,0.38,1
+kerjaya,Kerjaya,bandarutama,Bandar Utama,79.0,0.252,2
+kerjaya,Kerjaya,stadiumshahalam,Stadium Shah Alam,21.0,0.066,3
+kerjaya,Kerjaya,seksyen7,Seksyen 7,15.0,0.049,4
+kerjaya,Kerjaya,jambatankota,Jambatan Kota,11.0,0.035,5
+kinrara,Kinrara,ioipuchongjaya,IOI Puchong Jaya,229.0,0.089,1
+kinrara,Kinrara,muhibbah,Muhibbah,143.0,0.056,2
+kinrara,Kinrara,pusatbandarpuchong,Pusat Bandar Puchong,125.0,0.049,3
+kinrara,Kinrara,masjidjamek,Masjid Jamek,121.0,0.047,4
+kinrara,Kinrara,alamsutera,Alam Sutera,102.0,0.04,5
+klangjaya,Klang Jaya,glenmarie2,Glenmarie 2,41.0,0.282,1
+klangjaya,Klang Jaya,bandarutama,Bandar Utama,30.0,0.204,2
+klangjaya,Klang Jaya,bandarbukittinggi,Bandar Bukit Tinggi,15.0,0.105,3
+klangjaya,Klang Jaya,jambatankota,Jambatan Kota,12.0,0.08,4
+klangjaya,Klang Jaya,johansetia,Johan Setia,8.0,0.054,5
+klcc,KLCC,ampangpark,Ampang Park,2413.0,0.112,1
+klcc,KLCC,klsentral,KL Sentral,1540.0,0.072,2
+klcc,KLCC,wangsamaju,Wangsa Maju,1248.0,0.058,3
+klcc,KLCC,pasarseni,Pasar Seni,1188.0,0.055,4
+klcc,KLCC,srirampai,Sri Rampai,991.0,0.046,5
+klsentral,KL Sentral,klcc,KLCC,1671.0,0.065,1
+klsentral,KL Sentral,bankrakyatbangsar,Bank Rakyat Bangsar,1603.0,0.062,2
+klsentral,KL Sentral,bukitbintang,Bukit Bintang,1510.0,0.058,3
+klsentral,KL Sentral,abdullahhukum,Abdullah Hukum,1413.0,0.055,4
+klsentral,KL Sentral,pasarseni,Pasar Seni,1364.0,0.053,5
+kotadamansara,Kota Damansara,surian,Surian,903.0,0.201,1
+kotadamansara,Kota Damansara,bandarutama,Bandar Utama,686.0,0.153,2
+kotadamansara,Kota Damansara,mutiaradamansara,Mutiara Damansara,301.0,0.067,3
+kotadamansara,Kota Damansara,bukitbintang,Bukit Bintang,244.0,0.054,4
+kotadamansara,Kota Damansara,muziumnegara,Muzium Negara,231.0,0.051,5
+kuchai,Kuchai,tunrazakexchange,Tun Razak Exchange,574.0,0.198,1
+kuchai,Kuchai,bukitbintang,Bukit Bintang,423.0,0.146,2
+kuchai,Kuchai,muziumnegara,Muzium Negara,120.0,0.042,3
+kuchai,Kuchai,maluri,Maluri,112.0,0.039,4
+kuchai,Kuchai,pasarseni,Pasar Seni,94.0,0.032,5
+kwasadamansara,Kwasa Damansara,bandarutama,Bandar Utama,196.0,0.125,1
+kwasadamansara,Kwasa Damansara,muziumnegara,Muzium Negara,155.0,0.099,2
+kwasadamansara,Kwasa Damansara,bukitbintang,Bukit Bintang,135.0,0.086,3
+kwasadamansara,Kwasa Damansara,pasarseni,Pasar Seni,86.0,0.055,4
+kwasadamansara,Kwasa Damansara,tunrazakexchange,Tun Razak Exchange,84.0,0.053,5
+kwasasentral,Kwasa Sentral,bandarutama,Bandar Utama,411.0,0.132,1
+kwasasentral,Kwasa Sentral,bukitbintang,Bukit Bintang,323.0,0.103,2
+kwasasentral,Kwasa Sentral,muziumnegara,Muzium Negara,279.0,0.089,3
+kwasasentral,Kwasa Sentral,pasarseni,Pasar Seni,223.0,0.071,4
+kwasasentral,Kwasa Sentral,tunrazakexchange,Tun Razak Exchange,178.0,0.057,5
+lembahsubang,Lembah Subang,klsentral,KL Sentral,355.0,0.104,1
+lembahsubang,Lembah Subang,abdullahhukum,Abdullah Hukum,246.0,0.072,2
+lembahsubang,Lembah Subang,cgcglenmarie,Cgc Glenmarie,204.0,0.06,3
+lembahsubang,Lembah Subang,aradamansara,Ara Damansara,192.0,0.056,4
+lembahsubang,Lembah Subang,subangjaya,Subang Jaya,178.0,0.052,5
+maharajalela,Maharajalela,klsentral,KL Sentral,336.0,0.233,1
+maharajalela,Maharajalela,bukitbintang,Bukit Bintang,286.0,0.198,2
+maharajalela,Maharajalela,hangtuah,Hang Tuah,178.0,0.123,3
+maharajalela,Maharajalela,imbi,Imbi,160.0,0.111,4
+maharajalela,Maharajalela,rajachulan,Raja Chulan,75.0,0.052,5
+maluri,Maluri,bukitbintang,Bukit Bintang,2140.0,0.126,1
+maluri,Maluri,tunrazakexchange,Tun Razak Exchange,1311.0,0.078,2
+maluri,Maluri,muziumnegara,Muzium Negara,713.0,0.042,3
+maluri,Maluri,cochrane,Cochrane,669.0,0.04,4
+maluri,Maluri,tamanmutiara,Taman Mutiara,651.0,0.038,5
+masjidjamek,Masjid Jamek,klcc,KLCC,1112.0,0.074,1
+masjidjamek,Masjid Jamek,klsentral,KL Sentral,1041.0,0.069,2
+masjidjamek,Masjid Jamek,pwtc,PWTC,565.0,0.037,3
+masjidjamek,Masjid Jamek,hangtuah,Hang Tuah,531.0,0.035,4
+masjidjamek,Masjid Jamek,pasarseni,Pasar Seni,521.0,0.034,5
+medantuanku,Medan Tuanku,bukitbintang,Bukit Bintang,1120.0,0.353,1
+medantuanku,Medan Tuanku,chowkit,Chow Kit,295.0,0.093,2
+medantuanku,Medan Tuanku,bukitnanas,Bukit Nanas,264.0,0.083,3
+medantuanku,Medan Tuanku,klsentral,KL Sentral,262.0,0.083,4
+medantuanku,Medan Tuanku,rajachulan,Raja Chulan,226.0,0.071,5
+merdeka,Merdeka,bukitbintang,Bukit Bintang,350.0,0.1,1
+merdeka,Merdeka,maluri,Maluri,230.0,0.066,2
+merdeka,Merdeka,tunrazakexchange,Tun Razak Exchange,212.0,0.061,3
+merdeka,Merdeka,tamanmutiara,Taman Mutiara,131.0,0.037,4
+merdeka,Merdeka,pasarseni,Pasar Seni,125.0,0.036,5
+metroprima,Metro Prima,tunrazakexchange,Tun Razak Exchange,257.0,0.103,1
+metroprima,Metro Prima,bandarutama,Bandar Utama,215.0,0.086,2
+metroprima,Metro Prima,bukitbintang,Bukit Bintang,174.0,0.07,3
+metroprima,Metro Prima,sungaibuloh,Sungai Buloh,116.0,0.046,4
+metroprima,Metro Prima,surian,Surian,90.0,0.036,5
+miharja,Miharja,maluri,Maluri,205.0,0.132,1
+miharja,Miharja,pudu,Pudu,176.0,0.113,2
+miharja,Miharja,masjidjamek,Masjid Jamek,109.0,0.07,3
+miharja,Miharja,hangtuah,Hang Tuah,105.0,0.068,4
+miharja,Miharja,bukitbintang,Bukit Bintang,92.0,0.059,5
+muhibbah,Muhibbah,bukitjalil,Bukit Jalil,155.0,0.086,1
+muhibbah,Muhibbah,kinrara,Kinrara,133.0,0.074,2
+muhibbah,Muhibbah,ioipuchongjaya,IOI Puchong Jaya,112.0,0.062,3
+muhibbah,Muhibbah,masjidjamek,Masjid Jamek,77.0,0.043,4
+muhibbah,Muhibbah,awanbesar,Awan Besar,71.0,0.039,5
+mutiaradamansara,Mutiara Damansara,bandarutama,Bandar Utama,1019.0,0.173,1
+mutiaradamansara,Mutiara Damansara,surian,Surian,464.0,0.079,2
+mutiaradamansara,Mutiara Damansara,bukitbintang,Bukit Bintang,405.0,0.069,3
+mutiaradamansara,Mutiara Damansara,pusatbandardamansara,Pusat Bandar Damansara,391.0,0.066,4
+mutiaradamansara,Mutiara Damansara,muziumnegara,Muzium Negara,369.0,0.063,5
+muziumnegara,Muzium Negara,bukitbintang,Bukit Bintang,817.0,0.081,1
+muziumnegara,Muzium Negara,maluri,Maluri,760.0,0.075,2
+muziumnegara,Muzium Negara,bandarutama,Bandar Utama,666.0,0.066,3
+muziumnegara,Muzium Negara,tunrazakexchange,Tun Razak Exchange,612.0,0.061,4
+muziumnegara,Muzium Negara,kajang,Kajang,557.0,0.055,5
+pandanindah,Pandan Indah,maluri,Maluri,194.0,0.081,1
+pandanindah,Pandan Indah,bukitbintang,Bukit Bintang,189.0,0.08,2
+pandanindah,Pandan Indah,masjidjamek,Masjid Jamek,158.0,0.067,3
+pandanindah,Pandan Indah,tunrazakexchange,Tun Razak Exchange,106.0,0.045,4
+pandanindah,Pandan Indah,hangtuah,Hang Tuah,106.0,0.044,5
+pandanjaya,Pandan Jaya,maluri,Maluri,349.0,0.113,1
+pandanjaya,Pandan Jaya,bukitbintang,Bukit Bintang,227.0,0.074,2
+pandanjaya,Pandan Jaya,masjidjamek,Masjid Jamek,164.0,0.053,3
+pandanjaya,Pandan Jaya,hangtuah,Hang Tuah,133.0,0.043,4
+pandanjaya,Pandan Jaya,pudu,Pudu,119.0,0.039,5
+pasarklang,Pasar Klang,glenmarie2,Glenmarie 2,154.0,0.37,1
+pasarklang,Pasar Klang,bandarutama,Bandar Utama,123.0,0.296,2
+pasarklang,Pasar Klang,bandarbukittinggi,Bandar Bukit Tinggi,30.0,0.073,3
+pasarklang,Pasar Klang,jambatankota,Jambatan Kota,19.0,0.047,4
+pasarklang,Pasar Klang,seksyen7,Seksyen 7,11.0,0.026,5
+pasarseni,Pasar Seni,bukitbintang,Bukit Bintang,2429.0,0.132,1
+pasarseni,Pasar Seni,klsentral,KL Sentral,1384.0,0.075,2
+pasarseni,Pasar Seni,klcc,KLCC,1204.0,0.065,3
+pasarseni,Pasar Seni,tunrazakexchange,Tun Razak Exchange,925.0,0.05,4
+pasarseni,Pasar Seni,maluri,Maluri,574.0,0.031,5
+persiaranklcc,Persiaran KLCC,tunrazakexchange,Tun Razak Exchange,702.0,0.156,1
+persiaranklcc,Persiaran KLCC,maluri,Maluri,361.0,0.08,2
+persiaranklcc,Persiaran KLCC,bukitbintang,Bukit Bintang,228.0,0.051,3
+persiaranklcc,Persiaran KLCC,kajang,Kajang,215.0,0.048,4
+persiaranklcc,Persiaran KLCC,cochrane,Cochrane,196.0,0.044,5
+phileodamansara,Phileo Damansara,bandarutama,Bandar Utama,392.0,0.114,1
+phileodamansara,Phileo Damansara,bukitbintang,Bukit Bintang,287.0,0.084,2
+phileodamansara,Phileo Damansara,muziumnegara,Muzium Negara,231.0,0.067,3
+phileodamansara,Phileo Damansara,pusatbandardamansara,Pusat Bandar Damansara,201.0,0.058,4
+phileodamansara,Phileo Damansara,tunrazakexchange,Tun Razak Exchange,195.0,0.057,5
+plazarakyat,Plaza Rakyat,hangtuah,Hang Tuah,262.0,0.072,1
+plazarakyat,Plaza Rakyat,pudu,Pudu,233.0,0.064,2
+plazarakyat,Plaza Rakyat,maluri,Maluri,178.0,0.049,3
+plazarakyat,Plaza Rakyat,cempaka,Cempaka,143.0,0.039,4
+plazarakyat,Plaza Rakyat,ampang,Ampang,125.0,0.034,5
+puchongperdana,Puchong Perdana,ioipuchongjaya,IOI Puchong Jaya,197.0,0.12,1
+puchongperdana,Puchong Perdana,pusatbandarpuchong,Pusat Bandar Puchong,120.0,0.073,2
+puchongperdana,Puchong Perdana,tamanperindustrianpuchong,Taman Perindustrian Puchong,81.0,0.05,3
+puchongperdana,Puchong Perdana,masjidjamek,Masjid Jamek,68.0,0.041,4
+puchongperdana,Puchong Perdana,puchongprima,Puchong Prima,64.0,0.039,5
+puchongprima,Puchong Prima,ioipuchongjaya,IOI Puchong Jaya,306.0,0.106,1
+puchongprima,Puchong Prima,pusatbandarpuchong,Pusat Bandar Puchong,138.0,0.047,2
+puchongprima,Puchong Prima,tamanperindustrianpuchong,Taman Perindustrian Puchong,123.0,0.043,3
+puchongprima,Puchong Prima,cgcglenmarie,Cgc Glenmarie,118.0,0.041,4
+puchongprima,Puchong Prima,masjidjamek,Masjid Jamek,103.0,0.036,5
+pudu,Pudu,hangtuah,Hang Tuah,371.0,0.072,1
+pudu,Pudu,masjidjamek,Masjid Jamek,363.0,0.071,2
+pudu,Pudu,maluri,Maluri,357.0,0.069,3
+pudu,Pudu,plazarakyat,Plaza Rakyat,247.0,0.048,4
+pudu,Pudu,bukitbintang,Bukit Bintang,210.0,0.041,5
+pusatbandardamansara,Pusat Bandar Damansara,bandarutama,Bandar Utama,397.0,0.081,1
+pusatbandardamansara,Pusat Bandar Damansara,mutiaradamansara,Mutiara Damansara,382.0,0.078,2
+pusatbandardamansara,Pusat Bandar Damansara,bukitbintang,Bukit Bintang,379.0,0.077,3
+pusatbandardamansara,Pusat Bandar Damansara,muziumnegara,Muzium Negara,340.0,0.069,4
+pusatbandardamansara,Pusat Bandar Damansara,pasarseni,Pasar Seni,235.0,0.048,5
+pusatbandarpuchong,Pusat Bandar Puchong,ioipuchongjaya,IOI Puchong Jaya,306.0,0.12,1
+pusatbandarpuchong,Pusat Bandar Puchong,bandarputeri,Bandar Puteri,196.0,0.077,2
+pusatbandarpuchong,Pusat Bandar Puchong,puchongprima,Puchong Prima,162.0,0.064,3
+pusatbandarpuchong,Pusat Bandar Puchong,tamanperindustrianpuchong,Taman Perindustrian Puchong,134.0,0.053,4
+pusatbandarpuchong,Pusat Bandar Puchong,puchongperdana,Puchong Perdana,129.0,0.051,5
+putraheights,Putra Heights,klsentral,KL Sentral,195.0,0.068,1
+putraheights,Putra Heights,cgcglenmarie,Cgc Glenmarie,135.0,0.048,2
+putraheights,Putra Heights,klcc,KLCC,120.0,0.042,3
+putraheights,Putra Heights,abdullahhukum,Abdullah Hukum,115.0,0.04,4
+putraheights,Putra Heights,subangjaya,Subang Jaya,103.0,0.036,5
+putrajayasentral,Putrajaya Sentral,tunrazakexchange,Tun Razak Exchange,564.0,0.172,1
+putrajayasentral,Putrajaya Sentral,bukitbintang,Bukit Bintang,393.0,0.12,2
+putrajayasentral,Putrajaya Sentral,pasarseni,Pasar Seni,173.0,0.053,3
+putrajayasentral,Putrajaya Sentral,muziumnegara,Muzium Negara,134.0,0.041,4
+putrajayasentral,Putrajaya Sentral,maluri,Maluri,95.0,0.029,5
+putrapermai,Putra Permai,tunrazakexchange,Tun Razak Exchange,165.0,0.162,1
+putrapermai,Putra Permai,bukitbintang,Bukit Bintang,113.0,0.111,2
+putrapermai,Putra Permai,muziumnegara,Muzium Negara,64.0,0.063,3
+putrapermai,Putra Permai,bukitjalil,Bukit Jalil,43.0,0.042,4
+putrapermai,Putra Permai,cochrane,Cochrane,36.0,0.036,5
+pwtc,PWTC,sentultimur,Sentul Timur,468.0,0.087,1
+pwtc,PWTC,masjidjamek,Masjid Jamek,460.0,0.086,2
+pwtc,PWTC,bandaraya,Bandaraya,411.0,0.076,3
+pwtc,PWTC,titiwangsa,Titiwangsa,309.0,0.057,4
+pwtc,PWTC,sentul,Sentul,251.0,0.047,5
+rajachulan,Raja Chulan,bukitbintang,Bukit Bintang,641.0,0.166,1
+rajachulan,Raja Chulan,klsentral,KL Sentral,543.0,0.141,2
+rajachulan,Raja Chulan,bukitnanas,Bukit Nanas,303.0,0.078,3
+rajachulan,Raja Chulan,chowkit,Chow Kit,279.0,0.072,4
+rajachulan,Raja Chulan,medantuanku,Medan Tuanku,254.0,0.066,5
+rajauda,Raja Uda,tunrazakexchange,Tun Razak Exchange,277.0,0.2,1
+rajauda,Raja Uda,bukitbintang,Bukit Bintang,115.0,0.083,2
+rajauda,Raja Uda,cochrane,Cochrane,64.0,0.047,3
+rajauda,Raja Uda,maluri,Maluri,61.0,0.044,4
+rajauda,Raja Uda,sungaibuloh,Sungai Buloh,59.0,0.043,5
+salakselatan,Salak Selatan,masjidjamek,Masjid Jamek,283.0,0.076,1
+salakselatan,Salak Selatan,hangtuah,Hang Tuah,201.0,0.054,2
+salakselatan,Salak Selatan,bandaraya,Bandaraya,184.0,0.05,3
+salakselatan,Salak Selatan,klsentral,KL Sentral,164.0,0.044,4
+salakselatan,Salak Selatan,bukitbintang,Bukit Bintang,150.0,0.04,5
+seksyen7,Seksyen 7,glenmarie2,Glenmarie 2,217.0,0.402,1
+seksyen7,Seksyen 7,bandarutama,Bandar Utama,142.0,0.264,2
+seksyen7,Seksyen 7,stadiumshahalam,Stadium Shah Alam,26.0,0.049,3
+seksyen7,Seksyen 7,datomenteri,Dato' Menteri - SA Sentral,22.0,0.04,4
+seksyen7,Seksyen 7,jambatankota,Jambatan Kota,20.0,0.038,5
+semantan,Semantan,muziumnegara,Muzium Negara,470.0,0.091,1
+semantan,Semantan,bukitbintang,Bukit Bintang,378.0,0.073,2
+semantan,Semantan,bandarutama,Bandar Utama,336.0,0.065,3
+semantan,Semantan,pasarseni,Pasar Seni,323.0,0.063,4
+semantan,Semantan,pusatbandardamansara,Pusat Bandar Damansara,231.0,0.045,5
+sentul,Sentul,bandaraya,Bandaraya,261.0,0.105,1
+sentul,Sentul,pwtc,PWTC,229.0,0.092,2
+sentul,Sentul,masjidjamek,Masjid Jamek,218.0,0.088,3
+sentul,Sentul,titiwangsa,Titiwangsa,107.0,0.043,4
+sentul,Sentul,rajachulan,Raja Chulan,94.0,0.038,5
+sentulbarat,Sentul Barat,tunrazakexchange,Tun Razak Exchange,239.0,0.129,1
+sentulbarat,Sentul Barat,bukitbintang,Bukit Bintang,127.0,0.069,2
+sentulbarat,Sentul Barat,masjidjamek,Masjid Jamek,70.0,0.038,3
+sentulbarat,Sentul Barat,rajachulan,Raja Chulan,67.0,0.036,4
+sentulbarat,Sentul Barat,maluri,Maluri,62.0,0.034,5
+sentultimur,Sentul Timur,bandaraya,Bandaraya,389.0,0.105,1
+sentultimur,Sentul Timur,pwtc,PWTC,348.0,0.094,2
+sentultimur,Sentul Timur,masjidjamek,Masjid Jamek,344.0,0.093,3
+sentultimur,Sentul Timur,titiwangsa,Titiwangsa,153.0,0.042,4
+sentultimur,Sentul Timur,rajachulan,Raja Chulan,148.0,0.04,5
+serdangjaya,Serdang Jaya,bukitbintang,Bukit Bintang,97.0,0.133,1
+serdangjaya,Serdang Jaya,tunrazakexchange,Tun Razak Exchange,88.0,0.12,2
+serdangjaya,Serdang Jaya,pasarseni,Pasar Seni,35.0,0.047,3
+serdangjaya,Serdang Jaya,muziumnegara,Muzium Negara,33.0,0.046,4
+serdangjaya,Serdang Jaya,cochrane,Cochrane,27.0,0.037,5
+serdangrayaselatan,Serdang Raya Selatan,bukitbintang,Bukit Bintang,138.0,0.166,1
+serdangrayaselatan,Serdang Raya Selatan,tunrazakexchange,Tun Razak Exchange,106.0,0.128,2
+serdangrayaselatan,Serdang Raya Selatan,bukitjalil,Bukit Jalil,40.0,0.048,3
+serdangrayaselatan,Serdang Raya Selatan,muziumnegara,Muzium Negara,34.0,0.041,4
+serdangrayaselatan,Serdang Raya Selatan,masjidjamek,Masjid Jamek,34.0,0.041,5
+serdangrayautara,Serdang Raya Utara,bukitbintang,Bukit Bintang,225.0,0.148,1
+serdangrayautara,Serdang Raya Utara,tunrazakexchange,Tun Razak Exchange,198.0,0.13,2
+serdangrayautara,Serdang Raya Utara,bukitjalil,Bukit Jalil,106.0,0.069,3
+serdangrayautara,Serdang Raya Utara,muziumnegara,Muzium Negara,63.0,0.042,4
+serdangrayautara,Serdang Raya Utara,pasarseni,Pasar Seni,52.0,0.034,5
+seriandalas,Seri Andalas,glenmarie2,Glenmarie 2,108.0,0.36,1
+seriandalas,Seri Andalas,bandarutama,Bandar Utama,72.0,0.241,2
+seriandalas,Seri Andalas,bandarbukittinggi,Bandar Bukit Tinggi,19.0,0.064,3
+seriandalas,Seri Andalas,jambatankota,Jambatan Kota,14.0,0.046,4
+seriandalas,Seri Andalas,stadiumshahalam,Stadium Shah Alam,13.0,0.043,5
+setiawangsa,Setiawangsa,klcc,KLCC,848.0,0.224,1
+setiawangsa,Setiawangsa,ampangpark,Ampang Park,578.0,0.152,2
+setiawangsa,Setiawangsa,klsentral,KL Sentral,314.0,0.083,3
+setiawangsa,Setiawangsa,masjidjamek,Masjid Jamek,184.0,0.048,4
+setiawangsa,Setiawangsa,pasarseni,Pasar Seni,142.0,0.037,5
+sridamansarabarat,Sri Damansara Barat,bandarutama,Bandar Utama,171.0,0.127,1
+sridamansarabarat,Sri Damansara Barat,tunrazakexchange,Tun Razak Exchange,124.0,0.092,2
+sridamansarabarat,Sri Damansara Barat,surian,Surian,70.0,0.052,3
+sridamansarabarat,Sri Damansara Barat,muziumnegara,Muzium Negara,70.0,0.052,4
+sridamansarabarat,Sri Damansara Barat,sungaibuloh,Sungai Buloh,66.0,0.049,5
+sridamansarasentral,Sri Damansara Sentral,tunrazakexchange,Tun Razak Exchange,76.0,0.102,1
+sridamansarasentral,Sri Damansara Sentral,bandarutama,Bandar Utama,68.0,0.092,2
+sridamansarasentral,Sri Damansara Sentral,sungaibuloh,Sungai Buloh,40.0,0.054,3
+sridamansarasentral,Sri Damansara Sentral,bukitbintang,Bukit Bintang,33.0,0.045,4
+sridamansarasentral,Sri Damansara Sentral,surian,Surian,33.0,0.045,5
+sridamansaratimur,Sri Damansara Timur,bandarutama,Bandar Utama,99.0,0.089,1
+sridamansaratimur,Sri Damansara Timur,tunrazakexchange,Tun Razak Exchange,83.0,0.075,2
+sridamansaratimur,Sri Damansara Timur,bukitbintang,Bukit Bintang,72.0,0.065,3
+sridamansaratimur,Sri Damansara Timur,rajachulan,Raja Chulan,43.0,0.039,4
+sridamansaratimur,Sri Damansara Timur,masjidjamek,Masjid Jamek,43.0,0.039,5
+sridelima,Sri Delima,tunrazakexchange,Tun Razak Exchange,106.0,0.11,1
+sridelima,Sri Delima,bukitbintang,Bukit Bintang,64.0,0.066,2
+sridelima,Sri Delima,masjidjamek,Masjid Jamek,58.0,0.06,3
+sridelima,Sri Delima,bandarutama,Bandar Utama,50.0,0.051,4
+sridelima,Sri Delima,bandaraya,Bandaraya,48.0,0.049,5
+sripetaling,Sri Petaling,bukitjalil,Bukit Jalil,74.0,0.063,1
+sripetaling,Sri Petaling,awanbesar,Awan Besar,73.0,0.062,2
+sripetaling,Sri Petaling,masjidjamek,Masjid Jamek,71.0,0.061,3
+sripetaling,Sri Petaling,bandartasikselatan,Bandar Tasik Selatan,48.0,0.041,4
+sripetaling,Sri Petaling,ioipuchongjaya,IOI Puchong Jaya,42.0,0.036,5
+srirampai,Sri Rampai,klcc,KLCC,899.0,0.189,1
+srirampai,Sri Rampai,ampangpark,Ampang Park,757.0,0.159,2
+srirampai,Sri Rampai,klsentral,KL Sentral,358.0,0.075,3
+srirampai,Sri Rampai,wangsamaju,Wangsa Maju,253.0,0.053,4
+srirampai,Sri Rampai,abdullahhukum,Abdullah Hukum,224.0,0.047,5
+sriraya,Sri Raya,bukitbintang,Bukit Bintang,328.0,0.143,1
+sriraya,Sri Raya,tunrazakexchange,Tun Razak Exchange,153.0,0.067,2
+sriraya,Sri Raya,muziumnegara,Muzium Negara,152.0,0.067,3
+sriraya,Sri Raya,maluri,Maluri,148.0,0.065,4
+sriraya,Sri Raya,tamanmutiara,Taman Mutiara,143.0,0.063,5
+ss15,SS 15,subangjaya,Subang Jaya,583.0,0.136,1
+ss15,SS 15,cgcglenmarie,Cgc Glenmarie,384.0,0.09,2
+ss15,SS 15,klsentral,KL Sentral,235.0,0.055,3
+ss15,SS 15,aradamansara,Ara Damansara,230.0,0.054,4
+ss15,SS 15,taipan,Taipan,188.0,0.044,5
+ss18,SS 18,ss15,SS 15,117.0,0.105,1
+ss18,SS 18,klsentral,KL Sentral,86.0,0.077,2
+ss18,SS 18,subangjaya,Subang Jaya,84.0,0.075,3
+ss18,SS 18,cgcglenmarie,Cgc Glenmarie,72.0,0.065,4
+ss18,SS 18,klcc,KLCC,62.0,0.056,5
+stadiumkajang,Stadium Kajang,bukitbintang,Bukit Bintang,307.0,0.113,1
+stadiumkajang,Stadium Kajang,pasarseni,Pasar Seni,200.0,0.074,2
+stadiumkajang,Stadium Kajang,kajang,Kajang,170.0,0.062,3
+stadiumkajang,Stadium Kajang,maluri,Maluri,145.0,0.054,4
+stadiumkajang,Stadium Kajang,tunrazakexchange,Tun Razak Exchange,133.0,0.049,5
+stadiumshahalam,Stadium Shah Alam,glenmarie2,Glenmarie 2,229.0,0.426,1
+stadiumshahalam,Stadium Shah Alam,bandarutama,Bandar Utama,160.0,0.298,2
+stadiumshahalam,Stadium Shah Alam,seksyen7,Seksyen 7,27.0,0.05,3
+stadiumshahalam,Stadium Shah Alam,kerjaya,Kerjaya,17.0,0.031,4
+stadiumshahalam,Stadium Shah Alam,bandarbukittinggi,Bandar Bukit Tinggi,15.0,0.028,5
+subang,Subang,bandarutama,Bandar Utama,82.0,0.453,1
+subang,Subang,glenmarie2,Glenmarie 2,53.0,0.291,2
+subang,Subang,kayuara,Kayu Ara,5.0,0.029,3
+subang,Subang,damansaraidaman,Damansara Idaman,5.0,0.028,4
+subang,Subang,seksyen7,Seksyen 7,5.0,0.026,5
+subangalam,Subang Alam,klsentral,KL Sentral,43.0,0.08,1
+subangalam,Subang Alam,cgcglenmarie,Cgc Glenmarie,34.0,0.063,2
+subangalam,Subang Alam,klcc,KLCC,30.0,0.057,3
+subangalam,Subang Alam,abdullahhukum,Abdullah Hukum,27.0,0.051,4
+subangalam,Subang Alam,subangjaya,Subang Jaya,27.0,0.05,5
+subangjaya,Subang Jaya,ss15,SS 15,616.0,0.131,1
+subangjaya,Subang Jaya,cgcglenmarie,Cgc Glenmarie,428.0,0.091,2
+subangjaya,Subang Jaya,klsentral,KL Sentral,339.0,0.072,3
+subangjaya,Subang Jaya,aradamansara,Ara Damansara,246.0,0.052,4
+subangjaya,Subang Jaya,klcc,KLCC,182.0,0.039,5
+sultanismail,Sultan Ismail,pwtc,PWTC,244.0,0.142,1
+sultanismail,Sultan Ismail,masjidjamek,Masjid Jamek,112.0,0.065,2
+sultanismail,Sultan Ismail,sentultimur,Sentul Timur,92.0,0.054,3
+sultanismail,Sultan Ismail,bandaraya,Bandaraya,77.0,0.045,4
+sultanismail,Sultan Ismail,maluri,Maluri,61.0,0.035,5
+sungaibesi,Sungai Besi,bandartasikselatan,Bandar Tasik Selatan,212.0,0.086,1
+sungaibesi,Sungai Besi,tunrazakexchange,Tun Razak Exchange,203.0,0.082,2
+sungaibesi,Sungai Besi,bukitjalil,Bukit Jalil,152.0,0.062,3
+sungaibesi,Sungai Besi,bukitbintang,Bukit Bintang,149.0,0.061,4
+sungaibesi,Sungai Besi,masjidjamek,Masjid Jamek,126.0,0.051,5
+sungaibuloh,Sungai Buloh,bandarutama,Bandar Utama,403.0,0.127,1
+sungaibuloh,Sungai Buloh,tunrazakexchange,Tun Razak Exchange,215.0,0.068,2
+sungaibuloh,Sungai Buloh,muziumnegara,Muzium Negara,204.0,0.064,3
+sungaibuloh,Sungai Buloh,bukitbintang,Bukit Bintang,191.0,0.06,4
+sungaibuloh,Sungai Buloh,pasarseni,Pasar Seni,174.0,0.055,5
+sungaijernih,Sungai Jernih,bukitbintang,Bukit Bintang,410.0,0.147,1
+sungaijernih,Sungai Jernih,muziumnegara,Muzium Negara,213.0,0.076,2
+sungaijernih,Sungai Jernih,tunrazakexchange,Tun Razak Exchange,208.0,0.075,3
+sungaijernih,Sungai Jernih,pasarseni,Pasar Seni,134.0,0.048,4
+sungaijernih,Sungai Jernih,cochrane,Cochrane,117.0,0.042,5
+surian,Surian,bandarutama,Bandar Utama,952.0,0.155,1
+surian,Surian,kotadamansara,Kota Damansara,864.0,0.141,2
+surian,Surian,mutiaradamansara,Mutiara Damansara,456.0,0.075,3
+surian,Surian,bukitbintang,Bukit Bintang,368.0,0.06,4
+surian,Surian,muziumnegara,Muzium Negara,313.0,0.051,5
+taipan,Taipan,ss15,SS 15,183.0,0.08,1
+taipan,Taipan,usj7,USJ 7,170.0,0.074,2
+taipan,Taipan,cgcglenmarie,Cgc Glenmarie,138.0,0.06,3
+taipan,Taipan,klsentral,KL Sentral,133.0,0.058,4
+taipan,Taipan,subangjaya,Subang Jaya,123.0,0.054,5
+tamanbahagia,Taman Bahagia,klsentral,KL Sentral,253.0,0.106,1
+tamanbahagia,Taman Bahagia,abdullahhukum,Abdullah Hukum,141.0,0.059,2
+tamanbahagia,Taman Bahagia,klcc,KLCC,129.0,0.054,3
+tamanbahagia,Taman Bahagia,lembahsubang,Lembah Subang,116.0,0.049,4
+tamanbahagia,Taman Bahagia,aradamansara,Ara Damansara,109.0,0.046,5
+tamanconnaught,Taman Connaught,bukitbintang,Bukit Bintang,794.0,0.159,1
+tamanconnaught,Taman Connaught,tamanmutiara,Taman Mutiara,469.0,0.094,2
+tamanconnaught,Taman Connaught,tunrazakexchange,Tun Razak Exchange,407.0,0.082,3
+tamanconnaught,Taman Connaught,maluri,Maluri,373.0,0.075,4
+tamanconnaught,Taman Connaught,muziumnegara,Muzium Negara,282.0,0.057,5
+tamanequine,Taman Equine,tunrazakexchange,Tun Razak Exchange,224.0,0.139,1
+tamanequine,Taman Equine,bukitbintang,Bukit Bintang,179.0,0.111,2
+tamanequine,Taman Equine,muziumnegara,Muzium Negara,95.0,0.059,3
+tamanequine,Taman Equine,pasarseni,Pasar Seni,65.0,0.041,4
+tamanequine,Taman Equine,masjidjamek,Masjid Jamek,57.0,0.035,5
+tamanjaya,Taman Jaya,klsentral,KL Sentral,440.0,0.109,1
+tamanjaya,Taman Jaya,universiti,Universiti,263.0,0.065,2
+tamanjaya,Taman Jaya,abdullahhukum,Abdullah Hukum,202.0,0.05,3
+tamanjaya,Taman Jaya,cgcglenmarie,Cgc Glenmarie,178.0,0.044,4
+tamanjaya,Taman Jaya,pasarseni,Pasar Seni,156.0,0.039,5
+tamanmelati,Taman Melati,ampangpark,Ampang Park,1023.0,0.188,1
+tamanmelati,Taman Melati,klcc,KLCC,831.0,0.152,2
+tamanmelati,Taman Melati,klsentral,KL Sentral,359.0,0.066,3
+tamanmelati,Taman Melati,wangsamaju,Wangsa Maju,265.0,0.049,4
+tamanmelati,Taman Melati,abdullahhukum,Abdullah Hukum,242.0,0.044,5
+tamanmidah,Taman Midah,bukitbintang,Bukit Bintang,492.0,0.145,1
+tamanmidah,Taman Midah,tunrazakexchange,Tun Razak Exchange,265.0,0.078,2
+tamanmidah,Taman Midah,maluri,Maluri,263.0,0.077,3
+tamanmidah,Taman Midah,tamanmutiara,Taman Mutiara,240.0,0.07,4
+tamanmidah,Taman Midah,muziumnegara,Muzium Negara,172.0,0.051,5
+tamanmutiara,Taman Mutiara,bukitbintang,Bukit Bintang,787.0,0.122,1
+tamanmutiara,Taman Mutiara,tamanconnaught,Taman Connaught,578.0,0.089,2
+tamanmutiara,Taman Mutiara,maluri,Maluri,578.0,0.089,3
+tamanmutiara,Taman Mutiara,tunrazakexchange,Tun Razak Exchange,409.0,0.063,4
+tamanmutiara,Taman Mutiara,tamansuntex,Taman Suntex,385.0,0.06,5
+tamannagaemas,Taman Naga Emas,tunrazakexchange,Tun Razak Exchange,245.0,0.18,1
+tamannagaemas,Taman Naga Emas,bukitbintang,Bukit Bintang,186.0,0.137,2
+tamannagaemas,Taman Naga Emas,muziumnegara,Muzium Negara,76.0,0.055,3
+tamannagaemas,Taman Naga Emas,bandarutama,Bandar Utama,50.0,0.037,4
+tamannagaemas,Taman Naga Emas,pasarseni,Pasar Seni,48.0,0.035,5
+tamanparamount,Taman Paramount,klsentral,KL Sentral,276.0,0.114,1
+tamanparamount,Taman Paramount,abdullahhukum,Abdullah Hukum,198.0,0.082,2
+tamanparamount,Taman Paramount,klcc,KLCC,151.0,0.063,3
+tamanparamount,Taman Paramount,pasarseni,Pasar Seni,118.0,0.049,4
+tamanparamount,Taman Paramount,asiajaya,Asia Jaya,97.0,0.04,5
+tamanperindustrianpuchong,Taman Perindustrian Puchong,pusatbandarpuchong,Pusat Bandar Puchong,140.0,0.107,1
+tamanperindustrianpuchong,Taman Perindustrian Puchong,puchongprima,Puchong Prima,130.0,0.1,2
+tamanperindustrianpuchong,Taman Perindustrian Puchong,ioipuchongjaya,IOI Puchong Jaya,99.0,0.076,3
+tamanperindustrianpuchong,Taman Perindustrian Puchong,puchongperdana,Puchong Perdana,89.0,0.068,4
+tamanperindustrianpuchong,Taman Perindustrian Puchong,kinrara,Kinrara,53.0,0.04,5
+tamanpertama,Taman Pertama,bukitbintang,Bukit Bintang,477.0,0.165,1
+tamanpertama,Taman Pertama,tunrazakexchange,Tun Razak Exchange,283.0,0.098,2
+tamanpertama,Taman Pertama,maluri,Maluri,266.0,0.092,3
+tamanpertama,Taman Pertama,muziumnegara,Muzium Negara,164.0,0.057,4
+tamanpertama,Taman Pertama,cochrane,Cochrane,150.0,0.052,5
+tamanselatan,Taman Selatan,glenmarie2,Glenmarie 2,41.0,0.262,1
+tamanselatan,Taman Selatan,bandarutama,Bandar Utama,27.0,0.175,2
+tamanselatan,Taman Selatan,bandarbukittinggi,Bandar Bukit Tinggi,23.0,0.148,3
+tamanselatan,Taman Selatan,jambatankota,Jambatan Kota,14.0,0.087,4
+tamanselatan,Taman Selatan,johansetia,Johan Setia,11.0,0.067,5
+tamansuntex,Taman Suntex,bukitbintang,Bukit Bintang,628.0,0.151,1
+tamansuntex,Taman Suntex,tunrazakexchange,Tun Razak Exchange,336.0,0.08,2
+tamansuntex,Taman Suntex,tamanmutiara,Taman Mutiara,307.0,0.074,3
+tamansuntex,Taman Suntex,muziumnegara,Muzium Negara,293.0,0.07,4
+tamansuntex,Taman Suntex,maluri,Maluri,281.0,0.067,5
+titiwangsa,Titiwangsa,bukitbintang,Bukit Bintang,404.0,0.083,1
+titiwangsa,Titiwangsa,pwtc,PWTC,351.0,0.072,2
+titiwangsa,Titiwangsa,masjidjamek,Masjid Jamek,312.0,0.064,3
+titiwangsa,Titiwangsa,rajachulan,Raja Chulan,218.0,0.045,4
+titiwangsa,Titiwangsa,tunrazakexchange,Tun Razak Exchange,204.0,0.042,5
+ttdi,TTDI,bandarutama,Bandar Utama,581.0,0.118,1
+ttdi,TTDI,bukitbintang,Bukit Bintang,364.0,0.074,2
+ttdi,TTDI,muziumnegara,Muzium Negara,326.0,0.066,3
+ttdi,TTDI,mutiaradamansara,Mutiara Damansara,274.0,0.056,4
+ttdi,TTDI,surian,Surian,266.0,0.054,5
+tunrazakexchange,Tun Razak Exchange,bukitbintang,Bukit Bintang,2044.0,0.134,1
+tunrazakexchange,Tun Razak Exchange,maluri,Maluri,1366.0,0.089,2
+tunrazakexchange,Tun Razak Exchange,cochrane,Cochrane,1270.0,0.083,3
+tunrazakexchange,Tun Razak Exchange,pasarseni,Pasar Seni,731.0,0.048,4
+tunrazakexchange,Tun Razak Exchange,bandarutama,Bandar Utama,538.0,0.035,5
+tunsambanthan,Tun Sambanthan,klsentral,KL Sentral,588.0,0.304,1
+tunsambanthan,Tun Sambanthan,bukitbintang,Bukit Bintang,376.0,0.195,2
+tunsambanthan,Tun Sambanthan,hangtuah,Hang Tuah,153.0,0.079,3
+tunsambanthan,Tun Sambanthan,rajachulan,Raja Chulan,99.0,0.051,4
+tunsambanthan,Tun Sambanthan,imbi,Imbi,89.0,0.046,5
+uitmshahalam,UiTM Shah Alam,glenmarie2,Glenmarie 2,76.0,0.416,1
+uitmshahalam,UiTM Shah Alam,bandarutama,Bandar Utama,60.0,0.326,2
+uitmshahalam,UiTM Shah Alam,seksyen7,Seksyen 7,9.0,0.051,3
+uitmshahalam,UiTM Shah Alam,stadiumshahalam,Stadium Shah Alam,7.0,0.036,4
+uitmshahalam,UiTM Shah Alam,jambatankota,Jambatan Kota,5.0,0.029,5
+universiti,Universiti,klsentral,KL Sentral,961.0,0.146,1
+universiti,Universiti,abdullahhukum,Abdullah Hukum,795.0,0.121,2
+universiti,Universiti,klcc,KLCC,302.0,0.046,3
+universiti,Universiti,bankrakyatbangsar,Bank Rakyat Bangsar,297.0,0.045,4
+universiti,Universiti,pasarseni,Pasar Seni,264.0,0.04,5
+upm,UPM,tunrazakexchange,Tun Razak Exchange,217.0,0.145,1
+upm,UPM,bukitbintang,Bukit Bintang,154.0,0.103,2
+upm,UPM,pasarseni,Pasar Seni,81.0,0.054,3
+upm,UPM,muziumnegara,Muzium Negara,79.0,0.052,4
+upm,UPM,cochrane,Cochrane,57.0,0.038,5
+usj21,USJ 21,klsentral,KL Sentral,105.0,0.071,1
+usj21,USJ 21,taipan,Taipan,89.0,0.061,2
+usj21,USJ 21,cgcglenmarie,Cgc Glenmarie,88.0,0.059,3
+usj21,USJ 21,ss15,SS 15,78.0,0.053,4
+usj21,USJ 21,abdullahhukum,Abdullah Hukum,77.0,0.052,5
+usj7,USJ 7,taipan,Taipan,172.0,0.083,1
+usj7,USJ 7,subangjaya,Subang Jaya,158.0,0.076,2
+usj7,USJ 7,ss15,SS 15,153.0,0.073,3
+usj7,USJ 7,cgcglenmarie,Cgc Glenmarie,146.0,0.07,4
+usj7,USJ 7,klsentral,KL Sentral,136.0,0.065,5
+wangsamaju,Wangsa Maju,ampangpark,Ampang Park,1839.0,0.217,1
+wangsamaju,Wangsa Maju,klcc,KLCC,1134.0,0.134,2
+wangsamaju,Wangsa Maju,klsentral,KL Sentral,547.0,0.064,3
+wangsamaju,Wangsa Maju,abdullahhukum,Abdullah Hukum,422.0,0.05,4
+wangsamaju,Wangsa Maju,pasarseni,Pasar Seni,336.0,0.04,5
+wawasan,Wawasan,taipan,Taipan,110.0,0.073,1
+wawasan,Wawasan,ss15,SS 15,101.0,0.067,2
+wawasan,Wawasan,subangjaya,Subang Jaya,95.0,0.063,3
+wawasan,Wawasan,klsentral,KL Sentral,93.0,0.062,4
+wawasan,Wawasan,cgcglenmarie,Cgc Glenmarie,89.0,0.059,5

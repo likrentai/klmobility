@@ -1,0 +1,18 @@
+{
+  "period_start": "2026-06-01",
+  "period_end": "2026-08-31",
+  "days": 92,
+  "working_days": 61,
+  "weekend_holiday_days": 31,
+  "top_n": 5,
+  "prepared_on": "2026-09-28",
+  "busyness_measure": "average daily entries (tap-ins)",
+  "data_notes": [
+    "Exits at 32 Putrajaya Line stations (Damansara Damai to Putrajaya Sentral) are not recorded in the source; those trips are credited to other stations. Busyness therefore uses entries only, and no flow ends at those stations."
+  ],
+  "sources": {
+    "ridership": "data.gov.my, Daily Origin-Destination Ridership: Rapid Rail (KV), CC BY 4.0",
+    "stations": "data.gov.my, GTFS Static (Prasarana rapid-rail-kl), CC BY 4.0",
+    "boundaries": "Department of Statistics Malaysia (DOSM), data-open geodata"
+  }
+}
