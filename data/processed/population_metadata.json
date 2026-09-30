@@ -1,0 +1,18 @@
+{
+  "radius_m": 500,
+  "ratio_split": 0.624,
+  "entries_per_resident_split": 0.447,
+  "min_residents": 500,
+  "income_years": "most recent per district (2024 Selangor; 2022 Kuala Lumpur and Putrajaya)",
+  "prepared_on": "2026-09-30",
+  "sources": {
+    "population": "Kontur Population: Malaysia, 400 m H3 hexagons, 1 November 2023 (CC BY 4.0), via HDX",
+    "income": "DOSM, household income by administrative district (HIES)"
+  },
+  "type_names": [
+    "weekday / residents = Home-end commuter",
+    "weekday / visitors = Work-end commuter",
+    "weekend / residents = Local neighbourhood",
+    "weekend / visitors = Leisure destination"
+  ]
+}
