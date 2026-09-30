@@ -4,7 +4,7 @@ An interactive web map of how people use the Rapid Rail network (LRT, MRT and Mo
 
 **Live map:** https://likrentai.github.io/klmobility/
 
-Each station is drawn by its **level of activity** (average passenger entries per day) and coloured by its **weekend ratio**: pale stations are busy on working days and quiet at weekends, which marks weekday commuting at either the home end or the work end of the journey; dark blue stations stay as busy or get busier at weekends, typical of shopping and leisure areas. Clicking a station draws lines to its top 5 destinations and lists what lies within 500 m of it (shops, food and drink, offices, education, healthcare, tourism and leisure, and the main land use) and who uses it (residents within 500 m, entries per resident, station type and district household income). A switch recolours the stations by **station type** or by **change since 2023**, and optional layers show land use around every station and median household income by district. A **time slider** resizes every station to its average entries in any month from January 2023 to September 2026, and the station panel includes a small chart of that station's monthly entries.
+Each station is drawn by its **level of activity** (average passenger entries per day) and coloured by its **weekend ratio**: pale stations are busy on working days and quiet at weekends, which marks weekday commuting at either the home end or the work end of the journey; dark blue stations stay as busy or get busier at weekends, typical of shopping and leisure areas. Clicking a station draws lines to its top 5 destinations and lists what lies within 500 m of it (shops, food and drink, offices, education, healthcare, tourism and leisure, and the main land use) and who uses it (residents within 500 m, entries per resident, station type and district household income). A switch recolours the stations by **station type**, by **change since 2023**, or by **festive effect** (how much quieter or busier each station is during Hari Raya, Chinese New Year and four other festivals), and optional layers show land use around every station and median household income by district. A **time slider** resizes every station to its average entries in any month from January 2023 to September 2026, and the station panel includes a small chart of that station's monthly entries.
 
 ## Key findings (June to August 2026)
 
@@ -97,6 +97,41 @@ Average daily entries were calculated for every station and every calendar month
 | Putrajaya Line phase 2 | Opened on 16 March 2023; its stations are compared from June to August 2023, their first full summer, so part of their growth is early ramp-up |
 | Small starting numbers | Large percentages at quiet stations (e.g. Sultan Ismail, +229% from about 530 a day) mean little in absolute terms; the map shows size and change together for this reason |
 
+## Public holidays and festive seasons (Version 5)
+
+For each festival, every station's entries are compared with its **usual entries on the same day of the week** in the four weeks before and after, pooled over 2023 to 2026. The festive weeks are measured as a whole: the Hari Raya Aidilfitri and Chinese New Year weeks run from the day before to six days after, and Christmas and New Year from 24 December to 1 January.
+
+| Festival | Network, against a normal week | Years measured |
+|---|---|---|
+| Hari Raya Aidilfitri week | -21% (every year between -19% and -23%) | 2023 to 2026 |
+| Chinese New Year week | -20% | 2023 to 2026 |
+| Deepavali (three days) | -10% | 2023 to 2025 |
+| Christmas and New Year | -7% | 2023 to 2025 |
+| Hari Raya Haji (the day) | -31% | 2023 to 2026 |
+| National Day, 31 August | -8% (a loss on weekdays, a gain at weekends) | 2023 to 2026 |
+
+**Station types react as expected.** Offices close, so work-end stations empty the most, while leisure destinations hold up best:
+
+| Station type | Hari Raya week | Chinese New Year week | Christmas and New Year |
+|---|---|---|---|
+| Work-end commuter | -37% | -33% | -21% |
+| Home-end commuter | -29% | -32% | -21% |
+| Local neighbourhood | -21% | -21% | -10% |
+| Leisure destination | -14% | -12% | -3% |
+
+**Holidays largely behave like weekends.** The festive effect closely follows the weekend ratio (rank correlations of 0.68 to 0.88), so the more telling stations are those that depart from it:
+
+| Station | What happens | Likely reason |
+|---|---|---|
+| Bandar Tasik Selatan | Busier than a normal week at Hari Raya (+6%) and Chinese New Year (+17%) | Serves the TBS long-distance bus terminal, used by people travelling home for the festival (balik kampung) |
+| Pasar Seni, Imbi, Chow Kit | 14% to 35% busier during both festive weeks | Shopping and gathering places that stay open |
+| Bukit Bintang, Pasar Seni | +32% and +24% over Christmas and New Year | Shopping and New Year crowds |
+| Putrajaya Sentral | 4 to 6 times its usual entries on National Day, every year (about +309%) | The National Day parade at Dataran Putrajaya ([2025](https://thesmartlocal.my/merdeka-day-2025-parade/), [2026](https://www.nst.com.my/news/nation/2026/08/1521767/dataran-putrajaya-set-dazzle-national-day-parade-air-show)) |
+| Bukit Jalil, PWTC | Quieter than their weekend ratio suggests during festive weeks | Their weekend crowds come from stadium and exhibition events, which pause at festivals |
+| Merdeka, Kerinchi | Among the quietest (about -45% to -56% at Hari Raya) | Office districts |
+
+Single-day holidays vary with the day they fall on: one on a working day loses its commuters, while one at a weekend is compared with normal weekends and changes little (Hari Raya Haji 2025, a Saturday, was only -7%). The festive weeks are the most reliable results. All other public holidays were also measured as one group, but they are not shown on the map because they mostly repeat the weekend ratio (rank correlation 0.88).
+
 ## How it was built
 
 | Step | Notebook | What it does |
@@ -106,7 +141,8 @@ Average daily entries were calculated for every station and every calendar month
 | 3 | `03context2.ipynb` | Experiments: well-mapped stations only, and building floor area as a measure of workplaces and homes |
 | 4 | `04population1.ipynb` | Estimates residents within 500 m of each station, computes entries per resident, assigns station types, and adds district household income |
 | 5 | `05timeline1.ipynb` | Downloads the yearly ridership files from 2023, computes average daily entries by station and month, and compares June to August 2023 with June to August 2026 |
-| 6 | `02buildmap.ipynb` | Reads the prepared files and draws the interactive map, saved as `docs/index.html` |
+| 6 | `06holidays1.ipynb` | Measures each station's entries during public holidays and festive seasons against a normal week at the same station |
+| 7 | `02buildmap.ipynb` | Reads the prepared files and draws the interactive map, saved as `docs/index.html` |
 
 Main methods:
 
@@ -114,6 +150,7 @@ Main methods:
 - **Station matching.** Ridership station codes (e.g. `KG18: Bukit Bintang`) are matched to GTFS coordinates by cleaned name and line code, handling interchanges, sponsor names (e.g. KL Sentral - REDONE) and differently padded codes. All 154 places are matched.
 - **New stations averaged over their days in service.** A station that opened during the period is averaged only over the days it has data, not counted as zero before it opened. The Shah Alam Line (LRT3) opened on 29 June 2026 with free rides until 31 July, so its 20 stations have taps only from 1 August; without this correction their activity would be understated about threefold. Each line code is averaged separately and summed per place, so Bandar Utama (Kajang Line and LRT3) counts both platforms correctly.
 - **Fair comparisons over time.** Monthly figures are averages over the days each line code had data, so a station that opened mid-month is not understated, and a month with fewer than 7 days of data is left out. The change since 2023 compares the same three months in both years, and only line codes with at least 30 days of data in both.
+- **Holiday effects against a same-weekday baseline.** A holiday on a Monday is compared with normal Mondays at the same station (the median over four weeks before and four weeks after the window, leaving out other holidays and the day after a holiday). Kuala Lumpur, Putrajaya and Selangor holiday calendars are applied by each station's state.
 - **Working days vs weekends.** Public holidays in Kuala Lumpur are grouped with weekends, because travel on those days behaves like a weekend. The period has 61 working days and 31 weekend and holiday days.
 - **Spatial joins.** Each station is tagged with its district and parliamentary constituency using DOSM boundary files.
 - **Areal interpolation.** Where a population hexagon is only partly inside a station's circle, it contributes the same share of its population as the share of its area inside.
@@ -142,6 +179,7 @@ Main methods:
 - **The weekend ratio is a clue, not proof** of land use. Weekday-heavy stations include both residential (home end) and office (work end) stations, and a station can be quiet at weekends for other reasons, such as a nearby university.
 - **New Shah Alam Line (LRT3) stations have a short record.** Their figures cover August 2026 only, their first month of paid service, when curiosity trips may still lift weekend use. The map marks them as new.
 - **Change over time compares two summers.** June to August 2023 and 2026 are like-for-like, but one period cannot show every shift; the monthly chart for each station shows the full pattern. The last month shown may be incomplete.
+- **Festive effects depend on the calendar.** Only three or four of each festival are available, and single-day holidays depend on the day of the week they fall on. School holidays are not included, because they are not in the holiday calendar used; they can be added by hand in notebook 6. The new Shah Alam Line stations have no festive data yet.
 - **Station types assume people walk to the station.** Stations with park-and-ride car parks or feeder buses draw users from further away and can be classed as destinations.
 - **Population is a modelled estimate.** Kontur distributes census and satellite-derived population across hexagons; it is reliable at neighbourhood scale but not a count.
 - **Income is coarse.** It is published by district only, and for Kuala Lumpur and Putrajaya the latest year is 2022.
@@ -157,9 +195,10 @@ Requires Python 3.11 or later.
 4. Optionally run `03context2.ipynb` to repeat the experiments.
 5. Run `04population1.ipynb`. The first run downloads the population (about 11 MB) and income data and caches them.
 6. Run `05timeline1.ipynb`. The first run downloads the yearly ridership files from 2023 and caches them.
-7. Run `02buildmap.ipynb`. All visual settings (marker shape, colours, sizes, text, land-use, station-type, income and change colours, and the time slider) are in its first code cell.
+7. Run `06holidays1.ipynb`. It reuses the ridership files saved by notebook 5.
+8. Run `02buildmap.ipynb`. All visual settings (marker shape, colours, sizes, text, land-use, station-type, income, change and festive colours, button labels and the time slider) are in its first code cell.
 
-To refresh with newer data, change the two dates at the top of notebook 1 and follow the steps in its final section, then rerun `05timeline1.ipynb` (it downloads the current year again) and `02buildmap.ipynb`.
+To refresh with newer data, change the two dates at the top of notebook 1 and follow the steps in its final section, then rerun `05timeline1.ipynb` (it downloads the current year again), `06holidays1.ipynb` and `02buildmap.ipynb`.
 
 ## Roadmap
 
@@ -167,7 +206,8 @@ To refresh with newer data, change the two dates at the top of notebook 1 and fo
 - [x] **Version 2:** what surrounds each station (shops, offices and land use from OpenStreetMap)
 - [x] **Version 3:** who lives there (people within 500 m of each station from a gridded population map, station types, and household income by district)
 - [x] **Version 4:** how activity changes over time (monthly time slider, change since 2023, and a monthly chart for each station)
-- [ ] **Next:** seasonal and festive patterns (Hari Raya, Chinese New Year, school holidays)
+- [x] **Version 5:** public holidays and festive seasons (Hari Raya Aidilfitri, Chinese New Year, Deepavali, Hari Raya Haji, Christmas and New Year, National Day)
+- [ ] **Possible next steps:** school holidays; KTM Komuter
 
 ## Author
 Lik Ren Tai

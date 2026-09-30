@@ -1,0 +1,53 @@
+{
+  "festivals": [
+    "Hari Raya Aidilfitri",
+    "Chinese New Year",
+    "Deepavali",
+    "Hari Raya Haji",
+    "Christmas and New Year",
+    "National Day (Merdeka)",
+    "Other public holidays"
+  ],
+  "windows": {
+    "Hari Raya Aidilfitri": [
+      1,
+      6
+    ],
+    "Chinese New Year": [
+      1,
+      6
+    ],
+    "Deepavali": [
+      1,
+      1
+    ],
+    "Hari Raya Haji": [
+      0,
+      0
+    ],
+    "Christmas and New Year": [
+      1,
+      7
+    ],
+    "National Day (Merdeka)": [
+      0,
+      0
+    ]
+  },
+  "network_effect_pct": {
+    "Chinese New Year": -19.8,
+    "Christmas and New Year": -6.5,
+    "Deepavali": -10.4,
+    "Hari Raya Aidilfitri": -21.2,
+    "Hari Raya Haji": -30.9,
+    "National Day (Merdeka)": -7.5,
+    "Other public holidays": -30.9
+  },
+  "baseline_weeks": 4,
+  "gap_after_days": 7,
+  "data_end": "2026-09-27",
+  "prepared_on": "2026-09-30",
+  "notes": [
+    "Effect = entries during the window compared with the same station's usual entries on the same day of the week, from 4 weeks before and after the window, pooled over every year with data."
+  ]
+}
