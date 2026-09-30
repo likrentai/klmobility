@@ -5,10 +5,11 @@
   "working_days": 61,
   "weekend_holiday_days": 31,
   "top_n": 5,
-  "prepared_on": "2026-09-28",
+  "prepared_on": "2026-09-30",
   "busyness_measure": "average daily entries (tap-ins)",
   "data_notes": [
-    "Exits at 32 Putrajaya Line stations (Damansara Damai to Putrajaya Sentral) are not recorded in the source; those trips are credited to other stations. Busyness therefore uses entries only, and no flow ends at those stations."
+    "Exits at 32 Putrajaya Line stations (Damansara Damai to Putrajaya Sentral) are not recorded in the source; those trips are credited to other stations. Busyness therefore uses entries only, and no flow ends at those stations.",
+    "Stations that opened during the period are averaged over the days they have data: the Shah Alam Line (LRT3) opened on 29 June 2026 with free rides until 31 July, so its figures cover August only."
   ],
   "sources": {
     "ridership": "data.gov.my, Daily Origin-Destination Ridership: Rapid Rail (KV), CC BY 4.0",

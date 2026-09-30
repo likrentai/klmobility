@@ -1,7 +1,7 @@
 {
   "radius_m": 500,
-  "ratio_split": 0.624,
-  "entries_per_resident_split": 0.447,
+  "ratio_split": 0.613,
+  "entries_per_resident_split": 0.471,
   "min_residents": 500,
   "income_years": "most recent per district (2024 Selangor; 2022 Kuala Lumpur and Putrajaya)",
   "prepared_on": "2026-09-30",

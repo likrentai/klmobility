@@ -49,10 +49,10 @@ The weekend ratio is therefore best read as **when** a station is used, with its
 
 Residents within 500 m of each station were estimated from a gridded population map (Kontur, 400 m hexagons). Comparing them with ridership gives **entries per resident**: a low value means a station mainly serves the people living around it; a high value means most users come from elsewhere, to work, shop or visit. Combined with the weekend ratio, this sorts every station into one of four types:
 
-| | Weekday-heavy (weekend ratio below 0.62) | Weekend-leaning (0.62 or above) |
+| | Weekday-heavy (weekend ratio below 0.61) | Weekend-leaning (0.61 or above) |
 |---|---|---|
-| **Serves its residents** (below 0.45 entries per resident) | **Home-end commuter** (36 stations), e.g. Kuchai, Kinrara, Kelana Jaya, Sri Petaling | **Local neighbourhood** (40), e.g. Ampang, Cempaka, Pandan Jaya, Sentul |
-| **Draws visitors** (0.45 or above) | **Work-end commuter** (41), e.g. Kerinchi, Raja Chulan, Ampang Park, Abdullah Hukum | **Leisure destination** (37), e.g. Bukit Bintang, KL Sentral, KLCC, Pasar Seni |
+| **Serves its residents** (below 0.47 entries per resident) | **Home-end commuter** (38 stations), e.g. Kinrara, Kelana Jaya, Sri Petaling, Puchong Prima | **Local neighbourhood** (38), e.g. Ampang, Cempaka, Pandan Jaya, Kampung Baru |
+| **Draws visitors** (0.47 or above) | **Work-end commuter** (39), e.g. Kerinchi, Raja Chulan, Ampang Park, Abdullah Hukum | **Leisure destination** (39), e.g. Bukit Bintang, KL Sentral, KLCC, Pasar Seni |
 
 The dividing values are the network medians, so each side holds about half the stations.
 
@@ -60,8 +60,8 @@ The dividing values are the network medians, so each side holds about half the s
 
 | Check | Result |
 |---|---|
-| Robustness to the radius | Doubling the radius to 1,000 m changed the type of only 5 of 154 stations, all near the dividing lines; every reference station kept its type |
-| Residents vs ridership | Weak link (rank correlation +0.19): the number of people within walking distance only loosely predicts how many use a station |
+| Robustness to the radius | Doubling the radius to 1,000 m changed the type of only 1 of 154 stations; every reference station kept its type |
+| Residents vs ridership | Weak link (rank correlation +0.14): the number of people within walking distance only loosely predicts how many use a station |
 | Known misfits | Residential stations with park-and-ride or feeder buses (e.g. Putra Heights, Setiawangsa) appear as work-end stations, because their users live beyond walking distance; widening the radius to 1 km did not change them |
 
 Median monthly household income by district (DOSM) ranges from RM 8,837 in Klang to RM 11,404 in Ulu Langat (2024); Kuala Lumpur is RM 10,234 and Putrajaya RM 10,056 (2022, the latest year DOSM publishes for the federal territories). It is shown as broad context only, since Kuala Lumpur is a single district.
@@ -80,6 +80,7 @@ Main methods:
 
 - **Separating totals from flows.** The source file mixes daily station totals with station-to-station trips; mixing them doubles every count, so they are split before any analysis.
 - **Station matching.** Ridership station codes (e.g. `KG18: Bukit Bintang`) are matched to GTFS coordinates by cleaned name and line code, handling interchanges, sponsor names (e.g. KL Sentral - REDONE) and differently padded codes. All 154 places are matched.
+- **New stations averaged over their days in service.** A station that opened during the period is averaged only over the days it has data, not counted as zero before it opened. The Shah Alam Line (LRT3) opened on 29 June 2026 with free rides until 31 July, so its 20 stations have taps only from 1 August; without this correction their activity would be understated about threefold. Each line code is averaged separately and summed per place, so Bandar Utama (Kajang Line and LRT3) counts both platforms correctly.
 - **Working days vs weekends.** Public holidays in Kuala Lumpur are grouped with weekends, because travel on those days behaves like a weekend. The period has 61 working days and 31 weekend and holiday days.
 - **Spatial joins.** Each station is tagged with its district and parliamentary constituency using DOSM boundary files.
 - **Areal interpolation.** Where a population hexagon is only partly inside a station's circle, it contributes the same share of its population as the share of its area inside.
@@ -106,6 +107,7 @@ Main methods:
 - **Stations, not journeys.** Tap-in and tap-out data shows which stations people used, not where their journeys actually began or ended.
 - **Rapid Rail only.** KTM Komuter and the airport rail link are not included.
 - **The weekend ratio is a clue, not proof** of land use. Blue stations include both residential (home end) and office (work end) stations, and a station can be quiet at weekends for other reasons, such as a nearby university.
+- **New Shah Alam Line (LRT3) stations have a short record.** Their figures cover August 2026 only, their first month of paid service, when curiosity trips may still lift weekend use. The map marks them as new.
 - **Station types assume people walk to the station.** Stations with park-and-ride car parks or feeder buses draw users from further away and can be classed as destinations.
 - **Population is a modelled estimate.** Kontur distributes census and satellite-derived population across hexagons; it is reliable at neighbourhood scale but not a count.
 - **Income is coarse.** It is published by district only, and for Kuala Lumpur and Putrajaya the latest year is 2022.
