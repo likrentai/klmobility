@@ -1,0 +1,78 @@
+{
+  "radius_m": 500,
+  "osm_fetched_on": "2026-09-30",
+  "place_types": {
+    "shops": {
+      "shop": true
+    },
+    "food": {
+      "amenity": [
+        "restaurant",
+        "cafe",
+        "fast_food",
+        "food_court"
+      ]
+    },
+    "offices": {
+      "office": true
+    },
+    "education": {
+      "amenity": [
+        "school",
+        "college",
+        "university"
+      ]
+    },
+    "healthcare": {
+      "amenity": [
+        "hospital",
+        "clinic",
+        "doctors"
+      ]
+    },
+    "tourism_leisure": {
+      "tourism": [
+        "attraction",
+        "museum",
+        "gallery",
+        "hotel"
+      ],
+      "leisure": [
+        "park"
+      ]
+    }
+  },
+  "land_use_groups": {
+    "residential": {
+      "landuse": [
+        "residential"
+      ]
+    },
+    "commercial": {
+      "landuse": [
+        "commercial",
+        "retail"
+      ]
+    },
+    "industrial": {
+      "landuse": [
+        "industrial"
+      ]
+    },
+    "green": {
+      "landuse": [
+        "grass",
+        "forest",
+        "recreation_ground",
+        "meadow",
+        "village_green"
+      ],
+      "leisure": [
+        "park"
+      ]
+    }
+  },
+  "prepared_on": "2026-09-30",
+  "source": "OpenStreetMap contributors (ODbL)",
+  "note": "Counts reflect what volunteers have mapped in OpenStreetMap, not an official census."
+}

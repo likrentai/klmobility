@@ -1,8 +1,8 @@
-# Malaysia Klang Valley Rapid Rail Activity Map
+# Klang Valley Rapid Rail Activity Map
 
 An interactive web map of how people use the Rapid Rail network (LRT, MRT and Monorail) across the Klang Valley, Malaysia, built entirely from open government data.
 
-**Live map:** https://likrentai.github.io/klmobility/
+**Live map:** [LIVE LINK HERE](LIVE LINK HERE)
 
 Each station is drawn by its **level of activity** (average passenger entries per day) and coloured by its **weekend ratio**, which hints at what kind of place it serves: blue stations empty out at weekends, like office districts; red stations stay as busy or get busier, like shopping and leisure areas. Clicking a station draws lines to its top 5 destinations.
 
@@ -23,8 +23,8 @@ Travel is widely spread: on average, a station's top 5 destinations carry only a
 
 | Step | Notebook | What it does |
 |---|---|---|
-| 1 | `01datapreparation.ipynb` | Downloads ridership and station data, cleans and joins them, and saves small ready-to-map files in `data/processed` |
-| 2 | `02buildmap.ipynb` | Reads those files and draws the interactive map, saved as `docs/index.html` |
+| 1 | `01_prepare_v1_data.ipynb` | Downloads ridership and station data, cleans and joins them, and saves small ready-to-map files in `data/processed` |
+| 2 | `02_build_v1_map.ipynb` | Reads those files and draws the interactive map, saved as `docs/index.html` |
 
 Main methods:
 
@@ -57,8 +57,8 @@ Main methods:
 Requires Python 3.11 or later.
 
 1. Install the libraries: `pip install pandas pyarrow geopandas folium requests holidays jupyter`
-2. Run `01datapreparation.ipynb`. The first run downloads about 5 MB of ridership data and caches it in `data/raw`.
-3. Run `02buildmap.ipynb`. All visual settings (marker shape, colours, sizes, text) are in its first code cell.
+2. Run `01_prepare_v1_data.ipynb`. The first run downloads about 5 MB of ridership data and caches it in `data/raw`.
+3. Run `02_build_v1_map.ipynb`. All visual settings (marker shape, colours, sizes, text) are in its first code cell.
 
 To refresh with newer data, change the two dates at the top of notebook 1 and follow the steps in its final section.
 
@@ -70,4 +70,5 @@ To refresh with newer data, change the two dates at the top of notebook 1 and fo
 - [ ] **Version 4:** how activity changes over time (data since 2023)
 
 ## Author
+
 Lik Ren Tai
