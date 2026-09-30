@@ -4,7 +4,7 @@ An interactive web map of how people use the Rapid Rail network (LRT, MRT and Mo
 
 **Live map:** https://likrentai.github.io/klmobility/
 
-Each station is drawn by its **level of activity** (average passenger entries per day) and coloured by its **weekend ratio**: blue stations are busy on working days and quiet at weekends, which marks weekday commuting at either the home end or the work end of the journey; red stations stay as busy or get busier at weekends, typical of shopping and leisure areas. Clicking a station draws lines to its top 5 destinations and lists what lies within 500 m of it: shops, food and drink, offices, education, healthcare, tourism and leisure, and the main land use. An optional layer shows the land use around every station.
+Each station is drawn by its **level of activity** (average passenger entries per day) and coloured by its **weekend ratio**: blue stations are busy on working days and quiet at weekends, which marks weekday commuting at either the home end or the work end of the journey; red stations stay as busy or get busier at weekends, typical of shopping and leisure areas. Clicking a station draws lines to its top 5 destinations and lists what lies within 500 m of it (shops, food and drink, offices, education, healthcare, tourism and leisure, and the main land use) and who uses it (residents within 500 m, entries per resident, station type and district household income). A switch recolours the stations by **station type** instead of weekend ratio, and optional layers show land use around every station and median household income by district.
 
 ## Key findings (June to August 2026)
 
@@ -45,6 +45,27 @@ The hypothesis was that weekday-heavy (blue) stations would sit among offices an
 
 The weekend ratio is therefore best read as **when** a station is used, with its surroundings as supporting context rather than proof.
 
+## Who uses each station (Version 3)
+
+Residents within 500 m of each station were estimated from a gridded population map (Kontur, 400 m hexagons). Comparing them with ridership gives **entries per resident**: a low value means a station mainly serves the people living around it; a high value means most users come from elsewhere, to work, shop or visit. Combined with the weekend ratio, this sorts every station into one of four types:
+
+| | Weekday-heavy (weekend ratio below 0.62) | Weekend-leaning (0.62 or above) |
+|---|---|---|
+| **Serves its residents** (below 0.45 entries per resident) | **Home-end commuter** (36 stations), e.g. Kuchai, Kinrara, Kelana Jaya, Sri Petaling | **Local neighbourhood** (40), e.g. Ampang, Cempaka, Pandan Jaya, Sentul |
+| **Draws visitors** (0.45 or above) | **Work-end commuter** (41), e.g. Kerinchi, Raja Chulan, Ampang Park, Abdullah Hukum | **Leisure destination** (37), e.g. Bukit Bintang, KL Sentral, KLCC, Pasar Seni |
+
+The dividing values are the network medians, so each side holds about half the stations.
+
+**This separates the two ends of commuting, which Version 2 could not.** Kerinchi (Bangsar South) and Raja Chulan (Golden Triangle) come out as work-end stations, while Sri Petaling comes out as home-end, even though all three are weekday-heavy. The busiest places are clear destinations: Bukit Bintang has about 35,000 entries a day from roughly 7,300 residents (4.8 entries per resident), and KLCC and Pasar Seni about 3.6 each.
+
+| Check | Result |
+|---|---|
+| Robustness to the radius | Doubling the radius to 1,000 m changed the type of only 5 of 154 stations, all near the dividing lines; every reference station kept its type |
+| Residents vs ridership | Weak link (rank correlation +0.19): the number of people within walking distance only loosely predicts how many use a station |
+| Known misfits | Residential stations with park-and-ride or feeder buses (e.g. Putra Heights, Setiawangsa) appear as work-end stations, because their users live beyond walking distance; widening the radius to 1 km did not change them |
+
+Median monthly household income by district (DOSM) ranges from RM 8,837 in Klang to RM 11,404 in Ulu Langat (2024); Kuala Lumpur is RM 10,234 and Putrajaya RM 10,056 (2022, the latest year DOSM publishes for the federal territories). It is shown as broad context only, since Kuala Lumpur is a single district.
+
 ## How it was built
 
 | Step | Notebook | What it does |
@@ -52,7 +73,8 @@ The weekend ratio is therefore best read as **when** a station is used, with its
 | 1 | `01datapreparation.ipynb` | Downloads ridership and station data, cleans and joins them, and saves small ready-to-map files in `data/processed` |
 | 2 | `03context1.ipynb` | Counts places and measures land use within 500 m of each station from OpenStreetMap |
 | 3 | `03context2.ipynb` | Experiments: well-mapped stations only, and building floor area as a measure of workplaces and homes |
-| 4 | `02buildmap.ipynb` | Reads the prepared files and draws the interactive map, saved as `docs/index.html` |
+| 4 | `04population1.ipynb` | Estimates residents within 500 m of each station, computes entries per resident, assigns station types, and adds district household income |
+| 5 | `02buildmap.ipynb` | Reads the prepared files and draws the interactive map, saved as `docs/index.html` |
 
 Main methods:
 
@@ -60,6 +82,7 @@ Main methods:
 - **Station matching.** Ridership station codes (e.g. `KG18: Bukit Bintang`) are matched to GTFS coordinates by cleaned name and line code, handling interchanges, sponsor names (e.g. KL Sentral - REDONE) and differently padded codes. All 154 places are matched.
 - **Working days vs weekends.** Public holidays in Kuala Lumpur are grouped with weekends, because travel on those days behaves like a weekend. The period has 61 working days and 31 weekend and holiday days.
 - **Spatial joins.** Each station is tagged with its district and parliamentary constituency using DOSM boundary files.
+- **Areal interpolation.** Where a population hexagon is only partly inside a station's circle, it contributes the same share of its population as the share of its area inside.
 - **Walking-distance circles.** 500 m circles are drawn in a metre-based map projection (UTM zone 47N), and OpenStreetMap features are counted by their centre point, so a mall counts once.
 
 **Tools:** Python, pandas, GeoPandas, OSMnx, Folium (Leaflet), holidays, Jupyter.
@@ -72,6 +95,8 @@ Main methods:
 | Station locations (GTFS static feed) | [data.gov.my Open API](https://developer.data.gov.my/realtime-api/gtfs-static) (Prasarana) | CC BY 4.0 |
 | District and constituency boundaries | [Department of Statistics Malaysia (DOSM)](https://github.com/dosm-malaysia/data-open) | Open data |
 | Places, land use and buildings around stations | [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, via OSMnx | ODbL |
+| Population, 400 m hexagons (1 November 2023) | [Kontur Population: Malaysia](https://data.humdata.org/dataset/kontur-population-malaysia) via HDX | CC BY 4.0 |
+| Household income by district | [DOSM Household Income and Expenditure Survey](https://open.dosm.gov.my/data-catalogue/hh_income_district) | Open data |
 | Base map | [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors | ODbL |
 
 ## Limitations
@@ -81,6 +106,9 @@ Main methods:
 - **Stations, not journeys.** Tap-in and tap-out data shows which stations people used, not where their journeys actually began or ended.
 - **Rapid Rail only.** KTM Komuter and the airport rail link are not included.
 - **The weekend ratio is a clue, not proof** of land use. Blue stations include both residential (home end) and office (work end) stations, and a station can be quiet at weekends for other reasons, such as a nearby university.
+- **Station types assume people walk to the station.** Stations with park-and-ride car parks or feeder buses draw users from further away and can be classed as destinations.
+- **Population is a modelled estimate.** Kontur distributes census and satellite-derived population across hexagons; it is reliable at neighbourhood scale but not a count.
+- **Income is coarse.** It is published by district only, and for Kuala Lumpur and Putrajaya the latest year is 2022.
 - **OpenStreetMap is mapped by volunteers.** Counts of places show what has been mapped, not an official census; central Kuala Lumpur is well covered, some outer areas less so.
 
 ## Running it yourself
@@ -91,7 +119,8 @@ Requires Python 3.11 or later.
 2. Run `01datapreparation.ipynb`. The first run downloads about 5 MB of ridership data and caches it in `data/raw`.
 3. Run `03context1.ipynb`. The first run fetches OpenStreetMap data, which can take several minutes, and caches it.
 4. Optionally run `03context2.ipynb` to repeat the experiments.
-5. Run `02buildmap.ipynb`. All visual settings (marker shape, colours, sizes, text, land-use colours) are in its first code cell.
+5. Run `04population1.ipynb`. The first run downloads the population (about 11 MB) and income data and caches them.
+6. Run `02buildmap.ipynb`. All visual settings (marker shape, colours, sizes, text, land-use, station-type and income colours) are in its first code cell.
 
 To refresh with newer data, change the two dates at the top of notebook 1 and follow the steps in its final section.
 
@@ -99,7 +128,7 @@ To refresh with newer data, change the two dates at the top of notebook 1 and fo
 
 - [x] **Version 1:** station activity, weekend ratio and top destinations
 - [x] **Version 2:** what surrounds each station (shops, offices and land use from OpenStreetMap)
-- [ ] **Version 3:** who lives there (people within 500 m of each station from a gridded population map, and household income by district)
+- [x] **Version 3:** who lives there (people within 500 m of each station from a gridded population map, station types, and household income by district)
 - [ ] **Version 4:** how activity changes over time (data since 2023)
 
 ## Author
