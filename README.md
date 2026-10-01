@@ -1,10 +1,13 @@
-# Malaysia Klang Valley Rapid Rail Activity Map
+# Malaysia Klang Valley Rail Activity Map
 
-An interactive web map of how people use the Rapid Rail network (LRT, MRT and Monorail) across the Klang Valley, Malaysia, built entirely from open government data.
+An interactive web map of how people use the Rapid Rail network (LRT, MRT and Monorail) and KTM Komuter across the Klang Valley, Malaysia, built entirely from open government data.
 
-**Live map:** https://likrentai.github.io/klmobility/
+**Live map (Rapid Rail):** https://likrentai.github.io/klmobility/  
+**KTM Komuter by hour:** https://likrentai.github.io/klmobility/komuter.html
 
 Each station is drawn by its **level of activity** (average passenger entries per day) and coloured by its **weekend ratio**: pale stations are busy on working days and quiet at weekends, which marks weekday commuting at either the home end or the work end of the journey; dark blue stations stay as busy or get busier at weekends, typical of shopping and leisure areas. Clicking a station draws lines to its top 5 destinations and lists what lies within 500 m of it (shops, food and drink, offices, education, healthcare, tourism and leisure, and the main land use) and who uses it (residents within 500 m, entries per resident, station type and district household income). A switch recolours the stations by **station type**, by **change since 2023**, or by **festive effect** (how much quieter or busier each station is during Hari Raya, Chinese New Year and four other festivals), and optional layers show land use around every station and median household income by district. A **time slider** resizes every station to its average entries in any month from January 2023 to September 2026, and the station panel includes a small chart of that station's monthly entries.
+
+A second page shows **KTM Komuter by hour** (Version 6). Because Komuter data is hourly, it can show what the daily Rapid Rail data cannot: which stations are the **home end** and which the **work end** of the daily commute. An hourly slider replays an average day, and each station's panel has a 24-hour chart of entries and exits.
 
 ## Key findings (June to August 2026)
 
@@ -41,7 +44,7 @@ The hypothesis was that weekday-heavy stations would sit among offices and weeke
 | Retail and commercial activity lean towards weekends | Well-mapped stations: shops 0.30, commercial land 0.23, food and drink 0.21; green space -0.22 |
 | Office space leans towards weekdays, but too little is mapped to confirm it | Office buildings only: -0.14; just 171 office buildings are mapped, and only 7% of buildings have their number of storeys recorded |
 | Malaysian shophouses distort building-based measures | Counting `commercial` buildings as workplaces flipped the result to +0.26, because shophouses and malls carry that tag (5,821 of them against 171 offices) |
-| Home-end and work-end stations cannot be told apart | Both ends of a commute are busy on weekdays, and residential buildings show no link (0.08). Hourly ridership would be needed, and it is not published for Rapid Rail |
+| Home-end and work-end stations cannot be told apart | Both ends of a commute are busy on weekdays, and residential buildings show no link (0.08). Hourly ridership would be needed, and it is not published for Rapid Rail (it is for KTM Komuter: see Version 6) |
 
 The weekend ratio is therefore best read as **when** a station is used, with its surroundings as supporting context rather than proof.
 
@@ -132,6 +135,38 @@ For each festival, every station's entries are compared with its **usual entries
 
 Single-day holidays vary with the day they fall on: one on a working day loses its commuters, while one at a weekend is compared with normal weekends and changes little (Hari Raya Haji 2025, a Saturday, was only -7%). The festive weeks are the most reliable results. All other public holidays were also measured as one group, but they are not shown on the map because they mostly repeat the weekend ratio (rank correlation 0.88).
 
+## KTM Komuter by hour (Version 6)
+
+KTM Komuter publishes its trips by origin, destination **and hour**, which Rapid Rail does not. This page uses June to August 2026 (the same period as the Rapid Rail map), with every trip that has at least one end in the Klang Valley, including long commutes from Seremban and Tanjong Malim.
+
+**The commute in hours.** On working days, 42% of entries fall in the morning peak (06:00 to 09:59) and 32% in the evening peak (16:00 to 19:59); the busiest hour is 08:00, with 16% of the day's entries. Weekends have no sharp peak (busiest hour 11:00, 10%).
+
+**Home end or work end.** On working days, people leave home in the morning and come back in the evening, while a workplace sees the opposite. Each station gets a **home score**: morning entries plus evening exits, divided by all four peak counts. A score near 1 is a home end, near 0 a work end. A simpler measure using entries only (the morning share) agrees almost perfectly (rank correlation 0.99).
+
+| Type | Stations | Examples (home score) |
+|---|---|---|
+| Work end (0.4 or below) | 10 | Abdullah Hukum (0.04), Mid Valley (0.06), Bank Negara (0.09), KL Sentral (0.12), Subang Jaya (0.13), Sungai Buloh (0.17), Kajang (0.25) |
+| Mixed | 4 | Sentul, Setia Jaya, Seri Setia, Kampung Dato Harun |
+| Home end (0.6 or above) | 42 | Rawang (0.84), Klang (0.86), Shah Alam (0.87), Bangi (0.96), Seremban (0.97), Nilai and Senawang (0.98) |
+
+**Komuter is mostly a home-end network**: suburbs and the outer belt feed a short list of destinations in and around central Kuala Lumpur.
+
+**Transfers look like work ends.** Rawang's most common destination is not KL Sentral but **Sungai Buloh** (474 trips a working day against 386), where passengers can change to the MRT Kajang Line. Seremban's second destination is Kajang (116), another MRT interchange. Stations such as Sungai Buloh, Kajang, Subang Jaya and Bandar Tasek Selatan are therefore transfer points as much as workplaces: a passenger changing trains leaves Komuter there in the morning, just like someone arriving at work.
+
+**Checked against the Rapid Rail station types.** At the 13 stations within 450 m of a Rapid Rail station, 12 agree with the Version 3 station types in the broad sense (home end with home-end or local; work end with work-end or leisure), and 6 agree strictly. Most of the gap is Rapid Rail "leisure destinations" (KL Sentral, Pasar Seni, PWTC, Bandar Tasik Selatan) that are Komuter work ends, which fits the transfer explanation. The one real disagreement is Salak Selatan (a Komuter home end, a Rapid Rail work end).
+
+**Ridership is falling, most likely because of track works.** Komuter trips fell by 38% between June to August 2024 and 2026, but not evenly:
+
+| Group | Change, June to August 2024 to 2026 |
+|---|---|
+| Weekday peak hours | -29% |
+| Weekday off-peak hours | -45% |
+| Weekends | -53% |
+| From the Seremban Line | -51% |
+| From the Port Klang Line | -34% |
+
+The largest falls are on the Port Klang Line south of KL Sentral (Klang -70%, Subang Jaya -69%) and on the Seremban Line (Bandar Tasek Selatan -74%, Seremban -70%), while the northern Port Klang Line grew (Rawang +23%, Tanjong Malim +39%). This is consistent with the [KVDT2 double-track upgrading works](https://paultan.org/2024/04/18/kvdt2-project-starts-in-port-klang-two-ktm-komuter-lines-affected-new-schedule-effective-apr-20-released/), which have changed Komuter timetables since April 2024; in 2026 the Port Klang to KL Sentral line closes daily from 11:00 to 15:00, with works expected to continue until 2029 ([Free Malaysia Today](https://www.freemalaysiatoday.com/category/nation/2025/12/14/new-ktm-komuter-timetable-for-klang-valley-from-jan-1)). Fewer trains and midday closures hit off-peak and weekend riders hardest, while commuters keep travelling at the peaks. The peak-hour results above are therefore the most reliable part of this page.
+
 ## How it was built
 
 | Step | Notebook | What it does |
@@ -143,6 +178,10 @@ Single-day holidays vary with the day they fall on: one on a working day loses i
 | 5 | `05timeline1.ipynb` | Downloads the yearly ridership files from 2023, computes average daily entries by station and month, and compares June to August 2023 with June to August 2026 |
 | 6 | `06holidays1.ipynb` | Measures each station's entries during public holidays and festive seasons against a normal week at the same station |
 | 7 | `02buildmap.ipynb` | Reads the prepared files and draws the interactive map, saved as `docs/index.html` |
+| 8 | `07komuter1.ipynb` | Loads the hourly KTM Komuter trips, removes pseudo-stations, keeps trips with at least one Klang Valley end, and examines the falling trend |
+| 9 | `07komuter2.ipynb` | Locates every Komuter station from the KTMB GTFS feed (two from OpenStreetMap), checks them against the district boundaries, and finds the interchanges with Rapid Rail |
+| 10 | `07komuter3.ipynb` | Computes hourly profiles, the home score and station types, the interchange comparison and top destinations |
+| 11 | `02buildkomuter.ipynb` | Draws the Komuter page, saved as `docs/komuter.html` |
 
 Main methods:
 
@@ -154,6 +193,8 @@ Main methods:
 - **Working days vs weekends.** Public holidays in Kuala Lumpur are grouped with weekends, because travel on those days behaves like a weekend. The period has 61 working days and 31 weekend and holiday days.
 - **Spatial joins.** Each station is tagged with its district and parliamentary constituency using DOSM boundary files.
 - **Areal interpolation.** Where a population hexagon is only partly inside a station's circle, it contributes the same share of its population as the share of its area inside.
+- **Home score (Komuter).** On working days, morning entries plus evening exits (leaving home, coming back) are compared with morning exits plus evening entries (arriving at work, leaving). Stations with fewer than 50 peak trips a day are not typed.
+- **Komuter station positions.** 64 stations come from the KTMB GTFS feed; Seri Setia (whose GTFS position duplicates Setia Jaya) and Segambut Utara (opened in March 2026, not yet in GTFS) come from OpenStreetMap. The track is drawn station to station in timetable order.
 - **Walking-distance circles.** 500 m circles are drawn in a metre-based map projection (UTM zone 47N), and OpenStreetMap features are counted by their centre point, so a mall counts once.
 
 **Tools:** Python, pandas, GeoPandas, OSMnx, Folium (Leaflet), holidays, Jupyter.
@@ -164,6 +205,8 @@ Main methods:
 |---|---|---|
 | Daily origin-destination ridership, Rapid Rail (Klang Valley), 2023 to 2026 | [data.gov.my](https://data.gov.my/data-catalogue/ridership_od_rapidrail_daily) (Prasarana) | CC BY 4.0 |
 | Station locations (GTFS static feed) | [data.gov.my Open API](https://developer.data.gov.my/realtime-api/gtfs-static) (Prasarana) | CC BY 4.0 |
+| Hourly origin-destination ridership, KTM Komuter, 2023 to 2026 | [data.gov.my](https://data.gov.my/data-catalogue/ridership_od_komuter) (KTMB) | CC BY 4.0 |
+| Komuter station locations and timetable (GTFS static feed) | [data.gov.my Open API](https://developer.data.gov.my/realtime-api/gtfs-static) (KTMB) | CC BY 4.0 |
 | District and constituency boundaries | [Department of Statistics Malaysia (DOSM)](https://github.com/dosm-malaysia/data-open) | Open data |
 | Places, land use and buildings around stations | [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, via OSMnx | ODbL |
 | Population, 400 m hexagons (1 November 2023) | [Kontur Population: Malaysia](https://data.humdata.org/dataset/kontur-population-malaysia) via HDX | CC BY 4.0 |
@@ -173,9 +216,12 @@ Main methods:
 ## Limitations
 
 - **Putrajaya Line exits are missing in the source data.** The 32 stations from Damansara Damai (PYL05) to Putrajaya Sentral (PYL41) record entries, but no trip is ever recorded as ending there. Network totals still balance, so those exits are credited to other stations and cannot be recovered. For this reason the map measures activity by entries only, and no destination line ends at those stations.
-- **Daily data only.** Morning and evening peaks cannot be separated; the working-day and weekend comparison stands in for that.
+- **Daily data only for Rapid Rail.** Morning and evening peaks cannot be separated there; the working-day and weekend comparison stands in for that. KTM Komuter data is hourly (Version 6).
 - **Stations, not journeys.** Tap-in and tap-out data shows which stations people used, not where their journeys actually began or ended.
-- **Rapid Rail only.** KTM Komuter and the airport rail link are not included.
+- **Two networks, two pages.** Rapid Rail and KTM Komuter are shown on separate pages, since their volumes differ about eightfold and their data differ (daily against hourly). The airport rail link is not included.
+- **Komuter trips have one hour each**, most likely when the trip started, so exits are shown in the hour the passenger boarded. The dataset itself notes that counts may not exactly match passengers, especially on short routes.
+- **Komuter work ends include transfer points.** Passengers changing to the LRT or MRT leave Komuter in the morning, like people arriving at work.
+- **Komuter track works.** The KVDT2 upgrading has cut services since 2024; midday hours on the Port Klang Line in 2026 reflect the 11:00 to 15:00 closures as well as demand. The Komuter track is drawn as straight lines between stations, not the real alignment.
 - **The weekend ratio is a clue, not proof** of land use. Weekday-heavy stations include both residential (home end) and office (work end) stations, and a station can be quiet at weekends for other reasons, such as a nearby university.
 - **New Shah Alam Line (LRT3) stations have a short record.** Their figures cover August 2026 only, their first month of paid service, when curiosity trips may still lift weekend use. The map marks them as new.
 - **Change over time compares two summers.** June to August 2023 and 2026 are like-for-like, but one period cannot show every shift; the monthly chart for each station shows the full pattern. The last month shown may be incomplete.
@@ -197,6 +243,8 @@ Requires Python 3.11 or later.
 6. Run `05timeline1.ipynb`. The first run downloads the yearly ridership files from 2023 and caches them.
 7. Run `06holidays1.ipynb`. It reuses the ridership files saved by notebook 5.
 8. Run `02buildmap.ipynb`. All visual settings (marker shape, colours, sizes, text, land-use, station-type, income, change and festive colours, button labels and the time slider) are in its first code cell.
+9. For the Komuter page, download the yearly files `komuter_2023.parquet` to `komuter_2026.parquet` from data.gov.my and the KTMB GTFS feed (saved as `gtfs_ktmb.zip`) into `data/raw` if the notebooks cannot download them, then run `07komuter1.ipynb`, `07komuter2.ipynb` (it fetches two station positions from OpenStreetMap once) and `07komuter3.ipynb`.
+10. Run `02buildkomuter.ipynb`. Its first code cell holds all the page's visual settings.
 
 To refresh with newer data, change the two dates at the top of notebook 1 and follow the steps in its final section, then rerun `05timeline1.ipynb` (it downloads the current year again), `06holidays1.ipynb` and `02buildmap.ipynb`.
 
@@ -207,7 +255,8 @@ To refresh with newer data, change the two dates at the top of notebook 1 and fo
 - [x] **Version 3:** who lives there (people within 500 m of each station from a gridded population map, station types, and household income by district)
 - [x] **Version 4:** how activity changes over time (monthly time slider, change since 2023, and a monthly chart for each station)
 - [x] **Version 5:** public holidays and festive seasons (Hari Raya Aidilfitri, Chinese New Year, Deepavali, Hari Raya Haji, Christmas and New Year, National Day)
-- [ ] **Possible next steps:** school holidays; KTM Komuter
+- [x] **Version 6:** KTM Komuter by hour (home and work ends of commuting, hourly slider, transfers, and the effect of the KVDT2 track works)
+- [ ] **Next:** a headline summary, screenshots and a short case study
 
 ## Author
 Lik Ren Tai

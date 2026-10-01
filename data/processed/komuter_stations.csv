@@ -1,0 +1,68 @@
+station,same_as,region,district,corridor,lat,lon,source,rr_station,rr_key,rr_distance_m,interchange
+Putra,,Klang Valley,W.P. Kuala Lumpur,Shared core,3.165399,101.691101,GTFS,PWTC,pwtc,296.0,True
+Bank Negara,,Klang Valley,W.P. Kuala Lumpur,Shared core,3.155105,101.693118,GTFS,Bandaraya,bandaraya,161.0,True
+Kuala Lumpur,,Klang Valley,W.P. Kuala Lumpur,Shared core,3.139444,101.693333,GTFS,Pasar Seni,pasarseni,401.0,True
+KL Sentral,,Klang Valley,W.P. Kuala Lumpur,Shared core,3.134167,101.686111,GTFS,KL Sentral,klsentral,119.0,True
+Batu Caves,,Klang Valley,Gombak,Seremban Line,3.237796,101.681215,GTFS,Kampung Batu,kampungbatu,3655.0,False
+Taman Wahyu,,Klang Valley,W.P. Kuala Lumpur,Seremban Line,3.21451,101.672178,GTFS,Kampung Batu,kampungbatu,1067.0,False
+Kampung Batu,,Klang Valley,W.P. Kuala Lumpur,Seremban Line,3.204892,101.675584,GTFS,Kampung Batu,kampungbatu,71.0,True
+Batu Kentonmen,,Klang Valley,W.P. Kuala Lumpur,Seremban Line,3.198485,101.681138,GTFS,Kentomen,kentomen,356.0,True
+Sentul,,Klang Valley,W.P. Kuala Lumpur,Seremban Line,3.183581,101.688802,GTFS,Sentul Barat,sentulbarat,652.0,False
+Midvalley,,Klang Valley,W.P. Kuala Lumpur,Seremban Line,3.119211,101.678865,GTFS,Abdullah Hukum,abdullahhukum,666.0,False
+Seputeh,,Klang Valley,W.P. Kuala Lumpur,Seremban Line,3.113612,101.681474,GTFS,Abdullah Hukum,abdullahhukum,1113.0,False
+Salak Selatan,,Klang Valley,W.P. Kuala Lumpur,Seremban Line,3.098413,101.705055,GTFS,Salak Selatan,salakselatan,440.0,True
+Bandar Tasek Selatan,,Klang Valley,W.P. Kuala Lumpur,Seremban Line,3.076229,101.711119,GTFS,Bandar Tasik Selatan,bandartasikselatan,19.0,True
+Serdang,,Klang Valley,Petaling,Seremban Line,3.023404,101.716056,GTFS,Serdang Jaya,serdangjaya,811.0,False
+Kajang,,Klang Valley,Ulu Langat,Seremban Line,2.983222,101.790669,GTFS,Kajang,kajang,66.0,True
+Kajang 2,,Klang Valley,Ulu Langat,Seremban Line,2.96264,101.79207,GTFS,Kajang,kajang,2254.0,False
+UKM,,Klang Valley,Ulu Langat,Seremban Line,2.939775,101.787623,GTFS,Kajang,kajang,4803.0,False
+Bangi,,Klang Valley,Ulu Langat,Seremban Line,2.904467,101.785943,GTFS,Kajang,kajang,8742.0,False
+Batang Benar,,Outer belt,Negeri Sembilan,Seremban Line,2.829904,101.826655,GTFS,Kajang,kajang,17514.0,False
+Nilai,,Outer belt,Negeri Sembilan,Seremban Line,2.802356,101.799303,GTFS,Kajang,kajang,20135.0,False
+Labu,,Outer belt,Negeri Sembilan,Seremban Line,2.754501,101.826656,GTFS,Kajang,kajang,25764.0,False
+Tiroi,,Outer belt,Negeri Sembilan,Seremban Line,2.741459,101.871914,GTFS,Kajang,kajang,28391.0,False
+Seremban,,Outer belt,Negeri Sembilan,Seremban Line,2.719169,101.940792,GTFS,Kajang,kajang,33823.0,False
+Senawang,,Outer belt,Negeri Sembilan,Seremban Line,2.690138,101.972336,GTFS,Kajang,kajang,38400.0,False
+Sungai Gadut,,Outer belt,Negeri Sembilan,Seremban Line,2.660898,101.996158,GTFS,Kajang,kajang,42571.0,False
+Rembau,,Outer belt,Negeri Sembilan,Seremban Line,2.593055,102.094653,GTFS,Kajang,kajang,55088.0,False
+Pulau Sebang (Tampin),,Outer belt,Melaka / Negeri Sembilan,Seremban Line,2.46396,102.226308,GTFS,Kajang,kajang,75493.0,False
+Tanjong Malim,,Outer belt,Perak (Tanjong Malim),Port Klang Line,3.685142,101.518165,GTFS,Sungai Buloh,sungaibuloh,53854.0,False
+Kuala Kubu Bharu,,Outer belt,Hulu Selangor,Port Klang Line,3.553215,101.639591,GTFS,Gombak,gombak,37067.0,False
+Rasa,,Outer belt,Hulu Selangor,Port Klang Line,3.500586,101.634113,GTFS,Gombak,gombak,31615.0,False
+Batang Kali,,Outer belt,Hulu Selangor,Port Klang Line,3.46838,101.637759,GTFS,Gombak,gombak,28091.0,False
+Serendah,,Outer belt,Hulu Selangor,Port Klang Line,3.376172,101.614532,GTFS,Metro Prima,metroprima,18245.0,False
+Rawang,,Klang Valley,Gombak,Port Klang Line,3.318955,101.575012,GTFS,Sungai Buloh,sungaibuloh,12569.0,False
+Kuang,,Klang Valley,Gombak,Port Klang Line,3.258267,101.554794,GTFS,Sungai Buloh,sungaibuloh,6514.0,False
+Sungai Buloh,,Klang Valley,Petaling,Port Klang Line,3.206356,101.580128,GTFS,Sungai Buloh,sungaibuloh,184.0,True
+Kepong Sentral,,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.208653,101.62849,GTFS,Sri Damansara Timur,sridamansaratimur,95.0,True
+Kepong,,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.202996,101.637381,GTFS,Sri Damansara Timur,sridamansaratimur,1105.0,False
+Segambut,,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.186514,101.664032,GTFS,Jalan Ipoh,jalanipoh,1931.0,False
+Segambut 2,Segambut Utara,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.192022,101.655138,OpenStreetMap,Jinjang,jinjang,1955.0,False
+Segambut Utara,,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.192022,101.655138,OpenStreetMap,Jinjang,jinjang,1955.0,False
+Abdullah Hukum,,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.11869,101.67293,GTFS,Abdullah Hukum,abdullahhukum,6.0,True
+Angkasapuri,,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.113212,101.673367,GTFS,Kerinchi,kerinchi,592.0,False
+Pantai Dalam,,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.095607,101.669927,GTFS,Kerinchi,kerinchi,2224.0,False
+Petaling,,Klang Valley,W.P. Kuala Lumpur,Port Klang Line,3.086485,101.664338,GTFS,Muhibbah,muhibbah,2711.0,False
+Jalan Templer,,Klang Valley,Petaling,Port Klang Line,3.084013,101.656402,GTFS,Muhibbah,muhibbah,2523.0,False
+Kampung Dato Harun,,Klang Valley,Petaling,Port Klang Line,3.084828,101.632339,GTFS,Asia Jaya,asiajaya,2256.0,False
+Seri Setia,,Klang Valley,Petaling,Port Klang Line,3.084535,101.621904,OpenStreetMap,Taman Paramount,tamanparamount,2254.0,False
+Setia Jaya,,Klang Valley,Petaling,Port Klang Line,3.083373,101.61143,GTFS,Subang Jaya,subangjaya,2598.0,False
+Subang Jaya,,Klang Valley,Petaling,Port Klang Line,3.084554,101.587373,GTFS,Subang Jaya,subangjaya,85.0,True
+Batu Tiga,,Klang Valley,Petaling,Port Klang Line,3.076091,101.559811,GTFS,Kerjaya,kerjaya,724.0,False
+Shah Alam,,Klang Valley,Petaling,Port Klang Line,3.056388,101.525302,GTFS,Dato' Menteri - SA Sentral,datomenteri,1558.0,False
+Padang Jawa,,Klang Valley,Petaling,Port Klang Line,3.052532,101.492742,GTFS,UiTM Shah Alam,uitmshahalam,1450.0,False
+Bukit Badak,,Klang Valley,Klang,Port Klang Line,3.036147,101.470176,GTFS,Jambatan Kota,jambatankota,2810.0,False
+Klang,,Klang Valley,Klang,Port Klang Line,3.043078,101.449543,GTFS,Jambatan Kota,jambatankota,515.0,False
+Kampung Raja Uda,,Klang Valley,Klang,Port Klang Line,3.020253,101.41023,GTFS,Seri Andalas,seriandalas,3412.0,False
+Telok Gadong,,Klang Valley,Klang,Port Klang Line,3.033932,101.424947,GTFS,Taman Selatan,tamanselatan,2087.0,False
+Telok Pulai,,Klang Valley,Klang,Port Klang Line,3.04089,101.432153,GTFS,Jambatan Kota,jambatankota,1849.0,False
+Jalan Kastam,,Klang Valley,Klang,Port Klang Line,3.013128,101.402599,GTFS,Seri Andalas,seriandalas,4236.0,False
+Pelabuhan Klang Selatan,,Klang Valley,Klang,Port Klang Line,2.999323,101.39179,GTFS,Klang Jaya,klangjaya,5592.0,False
+Sungkai,,Other,Perak,Other,4.006223,101.301512,GTFS,Sungai Buloh,sungaibuloh,94508.0,False
+Tapah Road,,Other,Perak,Other,4.173861,101.189333,GTFS,Sungai Buloh,sungaibuloh,116426.0,False
+Kampar,,Other,Perak,Other,4.302787,101.153512,GTFS,Sungai Buloh,sungaibuloh,131273.0,False
+Kempas Baru,,Other,Johor,Other,1.535744,103.721801,GTFS,Kajang,kajang,268741.0,False
+Kulai,,Other,Johor,Other,1.663129,103.600489,GTFS,Kajang,kajang,249447.0,False
+Layang-Layang,,Other,Johor,Other,1.813828,103.475791,GTFS,Kajang,kajang,228404.0,False
+Rengam,,Other,Johor,Other,1.884852,103.403207,GTFS,Kajang,kajang,217264.0,False
+Pasir Gudang,,Other,Johor,Other,1.444783,103.92152,GTFS,Kajang,kajang,292652.0,False

@@ -1,0 +1,45 @@
+{
+  "source": "Hourly Origin-Destination Ridership: Komuter, data.gov.my (CC BY 4.0)",
+  "created": "2026-10-01 20:55",
+  "first_date": "2023-10-01",
+  "last_date": "2026-09-30",
+  "rows": 6430908,
+  "trips": 31026643,
+  "dropped_stations": [
+    "Unknown",
+    "Penalty"
+  ],
+  "rule": "trips with at least one end in the Klang Valley (KL, Putrajaya, Petaling, Gombak, Ulu Langat, Klang, Sepang)",
+  "station_regions": "provisional, by name; to be checked against KTMB GTFS coordinates",
+  "compare_season": "June to August 2024 against 2026",
+  "change_all_trips": -0.383,
+  "stations_created": "2026-10-01 21:20",
+  "station_coordinates": "KTMB GTFS (data.gov.my, CC BY 4.0); fixes from OpenStreetMap or approximate points",
+  "station_sources": {
+    "GTFS": 64,
+    "OpenStreetMap": 3
+  },
+  "interchange_m": 450,
+  "interchanges": 13,
+  "same_as": {
+    "Segambut 2": "Segambut Utara"
+  },
+  "findings_created": "2026-10-01 21:35",
+  "period_start": "2026-06-01",
+  "period_end": "2026-08-31",
+  "working_days": 61,
+  "weekend_holiday_days": 31,
+  "am_peak": "06:00 to 09:59",
+  "pm_peak": "16:00 to 19:59",
+  "home_score": "working days: (morning entries + evening exits) / (all four peak counts)",
+  "home_split": 0.6,
+  "work_split": 0.4,
+  "min_peak_trips": 50,
+  "type_counts": {
+    "Home-end": 42,
+    "Work-end": 10,
+    "Mixed": 4,
+    "Too few trips": 2
+  },
+  "interchange_agreement": "12 of 13"
+}

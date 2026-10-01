@@ -1,0 +1,291 @@
+origin,destination,trips_per_day,rank
+Abdullah Hukum,Pantai Dalam,143.9,1.0
+Abdullah Hukum,Petaling,130.6,2.0
+Abdullah Hukum,Shah Alam,39.1,3.0
+Abdullah Hukum,Kampung Dato Harun,30.6,4.0
+Abdullah Hukum,Klang,28.3,5.0
+Angkasapuri,Petaling,3.4,1.0
+Angkasapuri,Setia Jaya,3.3,2.0
+Angkasapuri,Telok Pulai,1.5,3.0
+Angkasapuri,Pantai Dalam,1.2,4.0
+Angkasapuri,Kampung Dato Harun,1.0,5.0
+Bandar Tasek Selatan,Midvalley,116.3,1.0
+Bandar Tasek Selatan,Seremban,51.7,2.0
+Bandar Tasek Selatan,Bangi,44.1,3.0
+Bandar Tasek Selatan,Kajang,36.9,4.0
+Bandar Tasek Selatan,Nilai,27.7,5.0
+Bangi,Kajang,158.6,1.0
+Bangi,KL Sentral,138.1,2.0
+Bangi,Midvalley,51.9,3.0
+Bangi,Bandar Tasek Selatan,49.1,4.0
+Bangi,Bank Negara,19.7,5.0
+Bank Negara,Batu Caves,124.9,1.0
+Bank Negara,Rawang,71.5,2.0
+Bank Negara,KL Sentral,52.8,3.0
+Bank Negara,Kuang,44.6,4.0
+Bank Negara,Batang Kali,29.2,5.0
+Batang Benar,KL Sentral,81.2,1.0
+Batang Benar,Kajang,59.6,2.0
+Batang Benar,Bandar Tasek Selatan,19.8,3.0
+Batang Benar,Midvalley,18.9,4.0
+Batang Benar,Bank Negara,9.6,5.0
+Batang Kali,Sungai Buloh,133.2,1.0
+Batang Kali,KL Sentral,119.2,2.0
+Batang Kali,Bank Negara,36.0,3.0
+Batang Kali,Rawang,27.4,4.0
+Batang Kali,Kuala Lumpur,26.5,5.0
+Batu Caves,KL Sentral,686.2,1.0
+Batu Caves,Kuala Lumpur,188.2,2.0
+Batu Caves,Kampung Batu,160.2,3.0
+Batu Caves,Bank Negara,136.9,4.0
+Batu Caves,Midvalley,58.6,5.0
+Batu Kentonmen,KL Sentral,18.9,1.0
+Batu Kentonmen,Midvalley,10.4,2.0
+Batu Kentonmen,Batu Caves,6.0,3.0
+Batu Kentonmen,Kuala Lumpur,5.6,4.0
+Batu Kentonmen,Sentul,2.2,5.0
+Batu Tiga,Subang Jaya,41.8,1.0
+Batu Tiga,KL Sentral,25.1,2.0
+Batu Tiga,Abdullah Hukum,11.5,3.0
+Batu Tiga,Setia Jaya,11.5,4.0
+Batu Tiga,Klang,7.8,5.0
+Bukit Badak,Subang Jaya,66.1,1.0
+Bukit Badak,KL Sentral,35.4,2.0
+Bukit Badak,Abdullah Hukum,18.5,3.0
+Bukit Badak,Setia Jaya,14.0,4.0
+Bukit Badak,Kampung Dato Harun,4.3,5.0
+Jalan Kastam,Subang Jaya,16.4,1.0
+Jalan Kastam,KL Sentral,13.4,2.0
+Jalan Kastam,Abdullah Hukum,7.4,3.0
+Jalan Kastam,Klang,6.5,4.0
+Jalan Kastam,Setia Jaya,5.0,5.0
+Jalan Templer,Abdullah Hukum,18.9,1.0
+Jalan Templer,KL Sentral,9.7,2.0
+Jalan Templer,Setia Jaya,2.6,3.0
+Jalan Templer,Subang Jaya,2.5,4.0
+Jalan Templer,Seri Setia,1.5,5.0
+KL Sentral,Batu Caves,727.9,1.0
+KL Sentral,Rawang,450.8,2.0
+KL Sentral,Tanjong Malim,317.9,3.0
+KL Sentral,Seremban,225.5,4.0
+KL Sentral,Pantai Dalam,176.7,5.0
+Kajang,Bangi,138.6,1.0
+Kajang,Seremban,103.0,2.0
+Kajang,Midvalley,92.9,3.0
+Kajang,Nilai,62.8,4.0
+Kajang,Batang Benar,57.8,5.0
+Kajang 2,KL Sentral,44.8,1.0
+Kajang 2,Midvalley,42.9,2.0
+Kajang 2,Kajang,39.7,3.0
+Kajang 2,Bandar Tasek Selatan,22.3,4.0
+Kajang 2,Bank Negara,5.5,5.0
+Kampung Batu,Batu Caves,151.4,1.0
+Kampung Batu,KL Sentral,73.3,2.0
+Kampung Batu,Midvalley,41.4,3.0
+Kampung Batu,Taman Wahyu,23.7,4.0
+Kampung Batu,Kuala Lumpur,17.7,5.0
+Kampung Dato Harun,KL Sentral,53.5,1.0
+Kampung Dato Harun,Abdullah Hukum,30.9,2.0
+Kampung Dato Harun,Setia Jaya,24.8,3.0
+Kampung Dato Harun,Subang Jaya,15.7,4.0
+Kampung Dato Harun,Shah Alam,8.8,5.0
+Kampung Raja Uda,Subang Jaya,46.2,1.0
+Kampung Raja Uda,KL Sentral,33.5,2.0
+Kampung Raja Uda,Abdullah Hukum,15.7,3.0
+Kampung Raja Uda,Shah Alam,7.1,4.0
+Kampung Raja Uda,Setia Jaya,5.8,5.0
+Kepong,KL Sentral,95.3,1.0
+Kepong,Bank Negara,22.9,2.0
+Kepong,Kuala Lumpur,11.7,3.0
+Kepong,Abdullah Hukum,10.4,4.0
+Kepong,Rawang,8.3,5.0
+Kepong Sentral,KL Sentral,134.2,1.0
+Kepong Sentral,Rawang,37.3,2.0
+Kepong Sentral,Abdullah Hukum,20.6,3.0
+Kepong Sentral,Tanjong Malim,17.0,4.0
+Kepong Sentral,Kuala Lumpur,15.5,5.0
+Klang,Subang Jaya,120.0,1.0
+Klang,KL Sentral,106.0,2.0
+Klang,Abdullah Hukum,37.0,3.0
+Klang,Setia Jaya,35.9,4.0
+Klang,Shah Alam,10.3,5.0
+Kuala Kubu Bharu,KL Sentral,66.3,1.0
+Kuala Kubu Bharu,Sungai Buloh,51.4,2.0
+Kuala Kubu Bharu,Rawang,23.2,3.0
+Kuala Kubu Bharu,Kuala Lumpur,13.8,4.0
+Kuala Kubu Bharu,Bank Negara,10.7,5.0
+Kuala Lumpur,Batu Caves,113.8,1.0
+Kuala Lumpur,Rawang,55.2,2.0
+Kuala Lumpur,Tanjong Malim,43.0,3.0
+Kuala Lumpur,KL Sentral,42.8,4.0
+Kuala Lumpur,Bangi,37.7,5.0
+Kuang,KL Sentral,117.5,1.0
+Kuang,Sungai Buloh,105.8,2.0
+Kuang,Bank Negara,47.1,3.0
+Kuang,Kuala Lumpur,25.6,4.0
+Kuang,Rawang,25.1,5.0
+Labu,KL Sentral,52.0,1.0
+Labu,Kajang,30.9,2.0
+Labu,Bandar Tasek Selatan,13.5,3.0
+Labu,Midvalley,10.9,4.0
+Labu,Bank Negara,3.2,5.0
+Midvalley,Bandar Tasek Selatan,126.3,1.0
+Midvalley,Serdang,84.4,2.0
+Midvalley,Kajang,80.3,3.0
+Midvalley,KL Sentral,56.0,4.0
+Midvalley,Seremban,52.2,5.0
+Nilai,KL Sentral,85.6,1.0
+Nilai,Kajang,61.0,2.0
+Nilai,Bandar Tasek Selatan,31.8,3.0
+Nilai,Midvalley,29.5,4.0
+Nilai,Bank Negara,10.3,5.0
+Padang Jawa,Subang Jaya,49.8,1.0
+Padang Jawa,KL Sentral,37.8,2.0
+Padang Jawa,Abdullah Hukum,18.0,3.0
+Padang Jawa,Setia Jaya,9.5,4.0
+Padang Jawa,Shah Alam,5.6,5.0
+Pantai Dalam,Abdullah Hukum,84.1,1.0
+Pantai Dalam,KL Sentral,78.6,2.0
+Pantai Dalam,Kuala Lumpur,6.0,3.0
+Pantai Dalam,Setia Jaya,4.1,4.0
+Pantai Dalam,Bank Negara,3.1,5.0
+Pelabuhan Klang Selatan,KL Sentral,23.7,1.0
+Pelabuhan Klang Selatan,Subang Jaya,20.8,2.0
+Pelabuhan Klang Selatan,Klang,3.9,3.0
+Pelabuhan Klang Selatan,Setia Jaya,3.6,4.0
+Pelabuhan Klang Selatan,Shah Alam,3.4,5.0
+Petaling,Abdullah Hukum,136.5,1.0
+Petaling,KL Sentral,119.4,2.0
+Petaling,Subang Jaya,8.1,3.0
+Petaling,Kampung Dato Harun,5.2,4.0
+Petaling,Klang,4.9,5.0
+Pulau Sebang (Tampin),KL Sentral,43.1,1.0
+Pulau Sebang (Tampin),Kajang,17.8,2.0
+Pulau Sebang (Tampin),Bandar Tasek Selatan,13.5,3.0
+Pulau Sebang (Tampin),Midvalley,6.8,4.0
+Pulau Sebang (Tampin),Serdang,4.4,5.0
+Putra,KL Sentral,69.2,1.0
+Putra,Batu Caves,59.1,2.0
+Putra,Tanjong Malim,28.4,3.0
+Putra,Rawang,24.7,4.0
+Putra,Midvalley,16.9,5.0
+Rasa,KL Sentral,50.0,1.0
+Rasa,Sungai Buloh,47.9,2.0
+Rasa,Rawang,28.1,3.0
+Rasa,Bank Negara,19.3,4.0
+Rasa,Kuala Lumpur,8.6,5.0
+Rawang,Sungai Buloh,474.4,1.0
+Rawang,KL Sentral,386.0,2.0
+Rawang,Bank Negara,86.2,3.0
+Rawang,Kuala Lumpur,58.7,4.0
+Rawang,Tanjong Malim,32.0,5.0
+Rembau,KL Sentral,28.2,1.0
+Rembau,Kajang,12.9,2.0
+Rembau,Bandar Tasek Selatan,8.3,3.0
+Rembau,Midvalley,3.6,4.0
+Rembau,Bank Negara,3.3,5.0
+Salak Selatan,Midvalley,69.9,1.0
+Salak Selatan,KL Sentral,26.9,2.0
+Salak Selatan,Seputeh,2.4,3.0
+Salak Selatan,Seremban,2.3,4.0
+Salak Selatan,Nilai,1.7,5.0
+Segambut,KL Sentral,120.9,1.0
+Segambut,Kuala Lumpur,20.2,2.0
+Segambut,Bank Negara,19.7,3.0
+Segambut,Abdullah Hukum,12.0,4.0
+Segambut,Rawang,5.4,5.0
+Segambut Utara,KL Sentral,148.0,1.0
+Segambut Utara,Bank Negara,20.1,2.0
+Segambut Utara,Kuala Lumpur,16.8,3.0
+Segambut Utara,Abdullah Hukum,16.1,4.0
+Segambut Utara,Kepong Sentral,9.0,5.0
+Senawang,KL Sentral,88.7,1.0
+Senawang,Kajang,34.1,2.0
+Senawang,Midvalley,23.1,3.0
+Senawang,Bandar Tasek Selatan,22.0,4.0
+Senawang,Kuala Lumpur,9.3,5.0
+Sentul,KL Sentral,29.0,1.0
+Sentul,Batu Caves,15.0,2.0
+Sentul,Midvalley,12.5,3.0
+Sentul,Kuala Lumpur,9.6,4.0
+Sentul,Kampung Batu,8.9,5.0
+Seputeh,KL Sentral,14.0,1.0
+Seputeh,Midvalley,5.4,2.0
+Seputeh,Kuala Lumpur,2.3,3.0
+Seputeh,Salak Selatan,2.0,4.0
+Seputeh,Batu Caves,1.7,5.0
+Serdang,Midvalley,102.9,1.0
+Serdang,KL Sentral,63.0,2.0
+Serdang,Seremban,14.5,3.0
+Serdang,Bandar Tasek Selatan,12.2,4.0
+Serdang,Kajang,9.7,5.0
+Seremban,KL Sentral,212.4,1.0
+Seremban,Kajang,116.4,2.0
+Seremban,Midvalley,58.7,3.0
+Seremban,Bandar Tasek Selatan,50.8,4.0
+Seremban,Bank Negara,15.5,5.0
+Serendah,Sungai Buloh,125.7,1.0
+Serendah,KL Sentral,123.0,2.0
+Serendah,Bank Negara,28.0,3.0
+Serendah,Kuala Lumpur,18.3,4.0
+Serendah,Rawang,11.1,5.0
+Seri Setia,KL Sentral,23.0,1.0
+Seri Setia,Abdullah Hukum,12.5,2.0
+Seri Setia,Subang Jaya,9.1,3.0
+Seri Setia,Setia Jaya,6.6,4.0
+Seri Setia,Klang,5.2,5.0
+Setia Jaya,KL Sentral,59.1,1.0
+Setia Jaya,Abdullah Hukum,30.0,2.0
+Setia Jaya,Kampung Dato Harun,28.3,3.0
+Setia Jaya,Klang,27.1,4.0
+Setia Jaya,Shah Alam,22.2,5.0
+Shah Alam,Subang Jaya,137.7,1.0
+Shah Alam,KL Sentral,108.5,2.0
+Shah Alam,Abdullah Hukum,50.5,3.0
+Shah Alam,Setia Jaya,25.0,4.0
+Shah Alam,Bank Negara,11.7,5.0
+Subang Jaya,Shah Alam,150.8,1.0
+Subang Jaya,Klang,113.1,2.0
+Subang Jaya,Telok Gadong,59.0,3.0
+Subang Jaya,Bukit Badak,52.1,4.0
+Subang Jaya,Padang Jawa,51.2,5.0
+Sungai Buloh,Rawang,471.0,1.0
+Sungai Buloh,Tanjong Malim,133.5,2.0
+Sungai Buloh,Batang Kali,126.5,3.0
+Sungai Buloh,Serendah,126.4,4.0
+Sungai Buloh,Kuang,110.5,5.0
+Sungai Gadut,KL Sentral,55.7,1.0
+Sungai Gadut,Kajang,15.0,2.0
+Sungai Gadut,Bandar Tasek Selatan,13.8,3.0
+Sungai Gadut,Midvalley,10.0,4.0
+Sungai Gadut,Kuala Lumpur,5.3,5.0
+Taman Wahyu,KL Sentral,106.7,1.0
+Taman Wahyu,Midvalley,39.2,2.0
+Taman Wahyu,Kampung Batu,36.0,3.0
+Taman Wahyu,Bank Negara,16.4,4.0
+Taman Wahyu,Kuala Lumpur,16.3,5.0
+Tanjong Malim,KL Sentral,330.9,1.0
+Tanjong Malim,Sungai Buloh,148.8,2.0
+Tanjong Malim,Kuala Lumpur,41.2,3.0
+Tanjong Malim,Rawang,37.8,4.0
+Tanjong Malim,Putra,34.8,5.0
+Telok Gadong,Subang Jaya,78.6,1.0
+Telok Gadong,KL Sentral,53.3,2.0
+Telok Gadong,Abdullah Hukum,32.3,3.0
+Telok Gadong,Setia Jaya,21.9,4.0
+Telok Gadong,Batu Tiga,5.4,5.0
+Telok Pulai,KL Sentral,48.0,1.0
+Telok Pulai,Subang Jaya,43.3,2.0
+Telok Pulai,Abdullah Hukum,20.1,3.0
+Telok Pulai,Setia Jaya,17.3,4.0
+Telok Pulai,Shah Alam,4.7,5.0
+Tiroi,KL Sentral,57.6,1.0
+Tiroi,Kajang,42.6,2.0
+Tiroi,Midvalley,17.2,3.0
+Tiroi,Bandar Tasek Selatan,13.3,4.0
+Tiroi,Bank Negara,6.3,5.0
+UKM,KL Sentral,74.3,1.0
+UKM,Kajang,63.9,2.0
+UKM,Midvalley,35.0,3.0
+UKM,Bandar Tasek Selatan,23.2,4.0
+UKM,Seremban,12.0,5.0
