@@ -3,7 +3,8 @@
 An interactive web map of how people use the Rapid Rail network (LRT, MRT and Monorail) and KTM Komuter across the Klang Valley, Malaysia, built entirely from open government data.
 
 **Live map (Rapid Rail):** https://likrentai.github.io/klmobility/  
-**KTM Komuter by hour:** https://likrentai.github.io/klmobility/komuter.html
+**KTM Komuter by hour:** https://likrentai.github.io/klmobility/komuter.html  
+**Case study:** https://likrentai.github.io/klmobility/case-study.html ([PDF version](docs/case-study.pdf))
 
 [![The Rapid Rail map: stations sized by daily entries and coloured by weekend ratio, with Bukit Bintang selected to show its top destinations and surroundings](docs/images/rapidrail.png)](https://likrentai.github.io/klmobility/)
 
@@ -270,4 +271,4 @@ Requires Python 3.11 or later.
 To refresh with newer data, change the two dates at the top of notebook 1 and follow the steps in its final section, then rerun `05timeline1.ipynb` (it downloads the current year again), `06holidays1.ipynb` and `02buildmap.ipynb`.
 
 ## Author
-Lik-Ren Tai
+Lik Ren Tai
