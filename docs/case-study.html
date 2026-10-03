@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who rides where, and when? Klang Valley rail case study</title>
+<meta name="description" content="A case study of an interactive map of Rapid Rail and KTM Komuter use across the Klang Valley, built from open government data.">
+<style>
+/* Fonts are stored next to this page (docs/fonts), both under the SIL Open Font License */
+@font-face { font-family: "Archivo"; src: url("fonts/archivo-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Archivo"; src: url("fonts/archivo-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+@font-face { font-family: "Source Serif 4"; src: url("fonts/source-serif-4-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Source Serif 4"; src: url("fonts/source-serif-4-latin-400-italic.woff2") format("woff2"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Source Serif 4"; src: url("fonts/source-serif-4-latin-600-normal.woff2") format("woff2"); font-weight: 600; font-display: swap; }
+
+:root {
+  --ink: #1d2433;        /* body text */
+  --muted: #5b6474;      /* captions and notes */
+  --track: #a3abb9;      /* the railway line in the margin */
+  --navy: #0C2363;       /* home ends, as on the maps */
+  --orange: #e66101;     /* work ends, as on the maps */
+  --orange-text: #b84d00;/* the same orange, dark enough for text */
+  --paper: #ffffff;
+  --wash: #f3f5f8;       /* behind figures */
+  --rule: #dde1e8;
+  --sans: "Archivo", "Segoe UI", Helvetica, Arial, sans-serif;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); font-size: 18px; line-height: 1.65; }
+a { color: var(--navy); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 2px; }
+
+/* ---------- Opening ---------- */
+.opening { max-width: 1080px; margin: 0 auto; padding: 56px 24px 24px; display: grid; grid-template-columns: minmax(0, 1fr) 420px; gap: 48px; align-items: start; }
+.opening h1 { font-family: var(--sans); font-weight: 700; font-size: 3.2rem; line-height: 1.05; letter-spacing: -0.02em; margin: 0 0 20px; color: var(--navy); }
+.standfirst { font-size: 1.25rem; line-height: 1.5; margin: 0 0 24px; max-width: 34em; }
+.byline { font-family: var(--sans); font-weight: 600; font-size: 0.95rem; color: var(--muted); margin: 0 0 16px; }
+.links { list-style: none; margin: 0; padding: 0; font-family: var(--sans); font-weight: 600; font-size: 0.95rem; }
+.links li { margin: 6px 0; }
+.tide { margin: 0; }
+.tide img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+.tide .print-only { display: none; }
+figcaption { font-size: 0.85rem; line-height: 1.45; color: var(--muted); margin-top: 8px; font-style: italic; }
+
+/* ---------- The line: each section is a station ---------- */
+.line { max-width: 1080px; margin: 0 auto; padding: 8px 24px 64px; }
+.line-inner { position: relative; padding-left: 64px; max-width: 800px; margin-left: -64px; }   /* the line sits in the margin, so text lines up with the title */
+.line-inner::before { content: ""; position: absolute; left: 14px; top: 18px; bottom: 30px; width: 5px; border-radius: 3px; background: var(--track); }
+section { position: relative; margin-top: 48px; }
+h2 { font-family: var(--sans); font-weight: 700; font-size: 1.6rem; line-height: 1.2; color: var(--navy); margin: 0 0 12px; }
+h2::before { /* a station on the line: an interchange ring, as on the Komuter map */
+  content: ""; position: absolute; left: -59px; top: 4px; width: 22px; height: 22px; border-radius: 50%;
+  background: var(--paper); border: 5px solid var(--navy); box-shadow: 0 0 0 3px var(--paper);
+}
+h3 { font-family: var(--sans); font-weight: 600; font-size: 1.15rem; line-height: 1.3; margin: 32px 0 6px; position: relative; }
+h3::before { /* a smaller stop for each finding */
+  content: ""; position: absolute; left: -54px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--navy);
+}
+h3.work::before { background: var(--orange); }
+p { margin: 0 0 14px; max-width: 40em; }
+.figure-line { font-family: var(--sans); margin: 4px 0 10px; display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.figure-line b { font-weight: 700; font-size: 2rem; line-height: 1; color: var(--navy); }
+.figure-line.work b { color: var(--orange-text); }
+.figure-line span { font-weight: 600; font-size: 0.95rem; color: var(--muted); }
+ul.plain { margin: 0 0 14px; padding-left: 1.1em; max-width: 40em; }
+ul.plain li { margin: 6px 0; }
+.wide { margin: 18px 0 8px; }
+.wide img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); }
+table { border-collapse: collapse; font-family: var(--sans); font-size: 0.92rem; margin: 8px 0 16px; }
+th, td { text-align: left; padding: 6px 18px 6px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); }
+td.num { text-align: right; font-variant-numeric: tabular-nums; padding-right: 0; }
+.terminus { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--rule); font-size: 0.9rem; color: var(--muted); }
+
+/* ---------- Narrow screens ---------- */
+@media (max-width: 900px) {
+  .opening { grid-template-columns: 1fr; gap: 28px; padding-top: 32px; }
+  .opening h1 { font-size: 2.4rem; }
+  .tide { max-width: 420px; }
+  .line-inner { margin-left: 0; }
+}
+@media (max-width: 560px) {
+  body { font-size: 17px; }
+  .opening, .line { padding-left: 16px; padding-right: 16px; }
+  .line-inner { padding-left: 36px; }
+  .line-inner::before { left: 6px; width: 4px; }
+  h2::before { left: -37px; width: 18px; height: 18px; border-width: 4px; }
+  h3::before { left: -33px; width: 10px; height: 10px; }
+  table { font-size: 0.85rem; }
+  th, td { padding-right: 10px; }
+}
+
+/* ---------- PDF and printing ---------- */
+@page { size: A4; margin: 16mm 15mm 16mm 15mm; }
+@media print {
+  body { font-size: 10.5pt; line-height: 1.5; }
+  a { color: var(--ink); text-decoration: none; }
+  .opening { grid-template-columns: minmax(0, 1fr) 62mm; gap: 8mm; padding: 0 0 4mm; max-width: none; }
+  .opening h1 { font-size: 26pt; }
+  .standfirst { font-size: 12.5pt; }
+  .tide .web-only, .web-link { display: none; }
+  .tide .print-only { display: block; }
+  .line { padding: 0; max-width: none; }
+  .line-inner { max-width: none; margin-left: 0; }
+  section { margin-top: 7mm; }
+  h2 { font-size: 15pt; break-after: avoid; }
+  h3 { font-size: 11.5pt; margin-top: 5mm; break-after: avoid; }
+  .figure-line b { font-size: 17pt; }
+  .wide { break-inside: avoid; }
+  .wide img { max-height: 95mm; width: auto; max-width: 100%; }
+  table { break-inside: avoid; }
+  .links a[href^="http"]::after { content: " (" attr(href) ")"; font-weight: 400; color: var(--muted); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tide .web-only { display: none; }
+  .tide .print-only { display: block; }
+}
+</style>
+</head>
+<body>
+
+<header class="opening">
+  <div>
+    <h1>Who rides where, and when?</h1>
+    <p class="standfirst">How people use the rail network across the Klang Valley, Malaysia, read from three years of open passenger data and turned into two interactive maps.</p>
+    <p class="byline">Lik Ren Tai, October 2026</p>
+    <ul class="links">
+      <li><a href="index.html">Open the Rapid Rail map</a></li>
+      <li><a href="komuter.html">Open KTM Komuter by hour</a></li>
+      <li><a href="https://github.com/likrentai/klmobility">Code, data notes and methods on GitHub</a></li>
+      <li class="web-link"><a href="case-study.pdf">Download this case study as a PDF</a></li>
+    </ul>
+  </div>
+  <figure class="tide">
+    <img class="web-only" src="images/komuter_tide.gif" width="640" height="869" alt="Animated map of KTM Komuter entries on an average working day, hour by hour from 05:00 to 23:00">
+    <img class="print-only" src="images/komuter_0700.png" width="694" height="942" alt="KTM Komuter entries at 07:00 on an average working day">
+    <figcaption>KTM Komuter on an average working day. In the morning the navy home ends fill as people set off; in the evening the orange work ends fill as they head home.</figcaption>
+  </figure>
+</header>
+
+<main class="line">
+<div class="line-inner">
+
+<section>
+  <h2>The question</h2>
+  <p>Ridership figures usually arrive as totals: so many trips a day, up or down on last year. I wanted to see the city behind them. Which stations do people leave from in the morning, and which do they travel to? What is around those stations, and who lives there? How did use change as new malls opened, during festivals, and while a line was being rebuilt?</p>
+  <p>The project uses only open government and community data, and every step is in Python notebooks that anyone can rerun.</p>
+</section>
+
+<section>
+  <h2>The data</h2>
+  <table>
+    <tr><th>What</th><th>Source</th></tr>
+    <tr><td>Rapid Rail trips (LRT, MRT, Monorail) by day, origin and destination, 2023 to 2026</td><td>data.gov.my (Prasarana)</td></tr>
+    <tr><td>KTM Komuter trips by hour, origin and destination, 2023 to 2026</td><td>data.gov.my (KTMB)</td></tr>
+    <tr><td>Station positions and timetables (GTFS)</td><td>data.gov.my Open API</td></tr>
+    <tr><td>Shops, offices and land use within 500 m of each station</td><td>OpenStreetMap</td></tr>
+    <tr><td>Residents near each station (400 m hexagons)</td><td>Kontur Population, via HDX</td></tr>
+    <tr><td>Household income and boundaries by district</td><td>Department of Statistics Malaysia</td></tr>
+  </table>
+  <p>The two maps were built in six versions, each adding one layer: activity, surroundings, residents, change over time, festivals, and finally the hourly Komuter data.</p>
+</section>
+
+<section>
+  <h2>What the data shows</h2>
+
+  <h3>New places reshape travel</h3>
+  <div class="figure-line"><b>+204%</b><span>Tun Razak Exchange (TRX) station, June to August 2023 against 2026</span></div>
+  <p>Entries at TRX rose from about 5,100 to 15,600 a day after The Exchange TRX mall opened in November 2023, the largest gain on the network. The network as a whole grew by about a third, yet the biggest hubs barely moved: KL Sentral +3%, KLCC +6%, Masjid Jamek +1%. New demand went to new places.</p>
+
+  <h3 class="work">Festivals empty the offices first</h3>
+  <div class="figure-line work"><b>&minus;37%</b><span>work-end stations in the Hari Raya week, against &minus;14% at leisure destinations</span></div>
+  <p>Each station was compared with its own normal week. In the Hari Raya Aidilfitri week the network is about a fifth quieter, but the drop depends on what the station is for. Bandar Tasik Selatan, next to the long-distance bus terminal, gets busier, most likely as people travel home, and Putrajaya Sentral sees four to six times its usual crowd on National Day, for the parade.</p>
+
+  <h3>Hourly data separates home from work</h3>
+  <div class="figure-line"><b>42 of 58</b><span>Komuter stations are the home end of the daily commute</span></div>
+  <p>Daily data cannot tell a suburb from an office district: both are busy on weekdays. Komuter data is hourly, so each station gets a home score from its peaks: people leave a home end in the morning and come back in the evening, and a work end sees the opposite. Two independent measures of this agree almost perfectly (rank correlation 0.99), and where Komuter meets Rapid Rail, 12 of 13 interchanges broadly match the station types found earlier from population data.</p>
+
+  <h3 class="work">Some work ends are really changes of train</h3>
+  <div class="figure-line work"><b>474 vs 386</b><span>trips a working day from Rawang to Sungai Buloh, against Rawang to KL Sentral</span></div>
+  <p>Rawang's most common destination is not the city centre but Sungai Buloh, where passengers can change to the MRT. Seremban's second destination is Kajang, another MRT interchange. A passenger changing trains leaves Komuter in the morning just like someone arriving at work, so several "work ends" are partly transfer points: a reminder to check what a pattern means before naming it.</p>
+  <figure class="wide">
+    <img src="images/komuter.png" width="1917" height="956" alt="The Komuter map at 08:00 with Rawang selected, showing its thickest line to Sungai Buloh and its hourly chart">
+    <figcaption>Rawang selected on the Komuter map: its thickest line runs to Sungai Buloh, and its hourly chart shows entries in the morning and exits in the evening.</figcaption>
+  </figure>
+
+  <h3 class="work">A rail upgrade is reshaping commuting</h3>
+  <div class="figure-line work"><b>&minus;38%</b><span>Komuter trips, June to August 2024 against 2026</span></div>
+  <p>The fall was not even, which ruled out a simple change in counting. Weekday peak trips fell 29%, off-peak 45% and weekends 53%; Klang and Seremban lost about 70% while Tanjong Malim, on the northern section, grew 39%. This is consistent with the KVDT2 double-track works, which have cut services since 2024 and in 2026 close the Port Klang to KL Sentral line from 11:00 to 15:00 every day. Commuters with no alternative keep travelling at the peaks; everyone else finds another way.</p>
+</section>
+
+<section>
+  <h2>Problems in the data, and how they were handled</h2>
+  <ul class="plain">
+    <li><b>Totals mixed with trips.</b> The Rapid Rail file holds daily station totals in the same table as station-to-station trips. Mixing them doubles every count, so they are separated first.</li>
+    <li><b>Missing exits.</b> 32 Putrajaya Line stations record entries but never appear as a destination. Activity is therefore measured by entries only.</li>
+    <li><b>New lines and free rides.</b> The Shah Alam Line opened in June 2026 with a free month; its stations are averaged over their paid days only, which avoids understating them about threefold.</li>
+    <li><b>Station positions.</b> One Komuter station had another station's coordinates in the official feed, and the newest was missing; both were taken from OpenStreetMap.</li>
+    <li><b>Local mapping habits.</b> Malaysian shophouses and malls are tagged as commercial buildings in OpenStreetMap, which made a building-based measure of workplaces point the wrong way. It was tested and set aside.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Limits</h2>
+  <p>Tap-in data shows which stations people used, not where their journeys began or ended. Rapid Rail data is daily only. Population is a modelled estimate and income is published by district. OpenStreetMap is mapped by volunteers, and the Komuter results for 2026 are shaped by the track works. Each map states these limits on the page.</p>
+</section>
+
+<section>
+  <h2>Where this could be useful</h2>
+  <ul class="plain">
+    <li><b>Retail and property:</b> footfall near stations, and how quickly a new mall changes it.</li>
+    <li><b>Transport planning:</b> where passengers transfer between networks, and who is affected by works and service changes.</li>
+    <li><b>Events and city services:</b> which stations swing most on festivals and public holidays.</li>
+  </ul>
+  <p>The same approach works for any city that publishes origin-destination ridership.</p>
+</section>
+
+<section>
+  <h2>About</h2>
+  <p>Lik Ren Tai applies data science in two fields: environmental science and railway systems. This project brings that experience to a question about people rather than nature or trains: how a city lives and moves. Built with Python, pandas, GeoPandas, OSMnx and Folium.</p>
+  <p class="terminus">Data: data.gov.my (CC BY 4.0), Department of Statistics Malaysia, Kontur Population (CC BY 4.0), &copy; OpenStreetMap contributors. Figures refer to June to August 2026 unless stated.</p>
+</section>
+
+</div>
+</main>
+</body>
+</html>
