@@ -269,15 +269,5 @@ Requires Python 3.11 or later.
 
 To refresh with newer data, change the two dates at the top of notebook 1 and follow the steps in its final section, then rerun `05timeline1.ipynb` (it downloads the current year again), `06holidays1.ipynb` and `02buildmap.ipynb`.
 
-## Roadmap
-
-- [x] **Version 1:** station activity, weekend ratio and top destinations
-- [x] **Version 2:** what surrounds each station (shops, offices and land use from OpenStreetMap)
-- [x] **Version 3:** who lives there (people within 500 m of each station from a gridded population map, station types, and household income by district)
-- [x] **Version 4:** how activity changes over time (monthly time slider, change since 2023, and a monthly chart for each station)
-- [x] **Version 5:** public holidays and festive seasons (Hari Raya Aidilfitri, Chinese New Year, Deepavali, Hari Raya Haji, Christmas and New Year, National Day)
-- [x] **Version 6:** KTM Komuter by hour (home and work ends of commuting, hourly slider, transfers, and the effect of the KVDT2 track works)
-- [ ] **Next:** a headline summary, screenshots and a short case study
-
 ## Author
-Lik Ren Tai
+Lik-Ren Tai
