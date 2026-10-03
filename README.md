@@ -5,11 +5,28 @@ An interactive web map of how people use the Rapid Rail network (LRT, MRT and Mo
 **Live map (Rapid Rail):** https://likrentai.github.io/klmobility/  
 **KTM Komuter by hour:** https://likrentai.github.io/klmobility/komuter.html
 
+[![The Rapid Rail map: stations sized by daily entries and coloured by weekend ratio, with Bukit Bintang selected to show its top destinations and surroundings](docs/images/rapidrail.png)](https://likrentai.github.io/klmobility/)
+
+*The Rapid Rail map, with Bukit Bintang selected: lines to its top 5 destinations, and a panel with its surroundings, residents, change since 2023 and festive effects. Click the image to open the live map.*
+
 Each station is drawn by its **level of activity** (average passenger entries per day) and coloured by its **weekend ratio**: pale stations are busy on working days and quiet at weekends, which marks weekday commuting at either the home end or the work end of the journey; dark blue stations stay as busy or get busier at weekends, typical of shopping and leisure areas. Clicking a station draws lines to its top 5 destinations and lists what lies within 500 m of it (shops, food and drink, offices, education, healthcare, tourism and leisure, and the main land use) and who uses it (residents within 500 m, entries per resident, station type and district household income). A switch recolours the stations by **station type**, by **change since 2023**, or by **festive effect** (how much quieter or busier each station is during Hari Raya, Chinese New Year and four other festivals), and optional layers show land use around every station and median household income by district. A **time slider** resizes every station to its average entries in any month from January 2023 to September 2026, and the station panel includes a small chart of that station's monthly entries.
 
 A second page shows **KTM Komuter by hour** (Version 6). Because Komuter data is hourly, it can show what the daily Rapid Rail data cannot: which stations are the **home end** and which the **work end** of the daily commute. An hourly slider replays an average day, and each station's panel has a 24-hour chart of entries and exits.
 
-## Key findings (June to August 2026)
+<a href="https://likrentai.github.io/klmobility/komuter.html"><img src="docs/images/komuter_tide.gif" width="480" alt="An average working day on KTM Komuter, hour by hour"></a>
+
+*An average working day on KTM Komuter, 05:00 to 23:00, sized by entries per hour: the navy home ends fill in the morning as people set off, and the orange work ends in the evening as they head home.*
+
+## What the map shows
+
+- **New places reshape travel.** Tun Razak Exchange (TRX) station tripled its daily entries (+204%, from about 5,100 to 15,600) after The Exchange TRX mall opened in November 2023, the largest gain on the network. Meanwhile the biggest hubs, KL Sentral, KLCC and Masjid Jamek, barely grew.
+- **Festivals empty the offices first.** In the Hari Raya week the network is about a fifth quieter, but work-end stations lose 37% against 14% at leisure destinations. Bandar Tasik Selatan, next to the TBS bus terminal, gets *busier* as people travel home.
+- **Hourly data separates home from work.** On KTM Komuter, 42 of the 58 stations analysed are home ends of the daily commute. Rawang's most common destination is not KL Sentral but Sungai Buloh, where passengers change to the MRT.
+- **A rail upgrade is reshaping commuting.** Komuter trips fell 38% between 2024 and 2026, most sharply on the sections affected by the KVDT2 double-track works, while peak-hour commuting held up best.
+
+*The sections below give the details and methods for each version.*
+
+## Station activity (Version 1)
 
 | Finding | Station | Figure |
 |---|---|---|
@@ -152,6 +169,10 @@ KTM Komuter publishes its trips by origin, destination **and hour**, which Rapid
 **Komuter is mostly a home-end network**: suburbs and the outer belt feed a short list of destinations in and around central Kuala Lumpur.
 
 **Transfers look like work ends.** Rawang's most common destination is not KL Sentral but **Sungai Buloh** (474 trips a working day against 386), where passengers can change to the MRT Kajang Line. Seremban's second destination is Kajang (116), another MRT interchange. Stations such as Sungai Buloh, Kajang, Subang Jaya and Bandar Tasek Selatan are therefore transfer points as much as workplaces: a passenger changing trains leaves Komuter there in the morning, just like someone arriving at work.
+
+[![The Komuter page at 08:00 on a working day, with Rawang selected](docs/images/komuter.png)](https://likrentai.github.io/klmobility/komuter.html)
+
+*Exits at 08:00 on a working day, with Rawang selected: its thickest line runs to Sungai Buloh (an MRT interchange), and its hourly chart shows entries in the morning and exits in the evening, the mark of a home end.*
 
 **Checked against the Rapid Rail station types.** At the 13 stations within 450 m of a Rapid Rail station, 12 agree with the Version 3 station types in the broad sense (home end with home-end or local; work end with work-end or leisure), and 6 agree strictly. Most of the gap is Rapid Rail "leisure destinations" (KL Sentral, Pasar Seni, PWTC, Bandar Tasik Selatan) that are Komuter work ends, which fits the transfer explanation. The one real disagreement is Salak Selatan (a Komuter home end, a Rapid Rail work end).
 
